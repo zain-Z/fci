@@ -271,8 +271,8 @@ class MarksClass(models.Model):
 
 
 class AttendanceRange(models.Model):
-    start_date = models.DateField()
-    end_date = models.DateField()
+    start = models.DateField()
+    end = models.DateField()
 
 
 # Triggers
@@ -295,8 +295,8 @@ days = {
 
 def create_attendance(sender, instance, **kwargs):
     if kwargs['created']:
-        start_date = AttendanceRange.objects.all().get().start_date
-        end_date = AttendanceRange.objects.all().get().end_date
+        start_date = AttendanceRange.objects.all().get().start
+        end_date = AttendanceRange.objects.all().get().end
         for single_date in daterange(start_date, end_date):
             if single_date.isoweekday() == days[instance.day]:
                 try:
