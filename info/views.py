@@ -1,3 +1,4 @@
+from django.core.exceptions import MultipleObjectsReturned
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 from .models import Dept, Class, Student, Attendance, Course, Teacher, Assign, AttendanceTotal, time_slots, \
@@ -15,8 +16,26 @@ def index(request):
     if request.user.is_teacher:
         return render(request, 'info/t_homepage.html')
     if request.user.is_student:
-        return render(request, 'info/homepage.html')
+        return render(request, 'info/fci_scu.html')
     return render(request, 'info/logout.html')
+
+
+@login_required
+def studentservices(request):
+    if request.user.is_student:
+        return render(request, 'info/student_services.html')
+
+
+@login_required
+def about(request):
+    if request.user.is_student:
+        return render(request, 'info/about.html')
+
+
+@login_required
+def studyatfci(request):
+    if request.user.is_student:
+        return render(request, 'info/studyatfci.html')
 
 
 @login_required()
@@ -38,7 +57,8 @@ def attendance(request, stud_id):
 def attendance_detail(request, stud_id, course_id):
     stud = get_object_or_404(Student, USN=stud_id)
     cr = get_object_or_404(Course, id=course_id)
-    att_list = Attendance.objects.filter(course=cr, student=stud).order_by('date')
+    att_list = Attendance.objects.filter(
+        course=cr, student=stud).order_by('date')
     return render(request, 'info/att_detail.html', {'att_list': att_list, 'cr': cr})
 
 
@@ -119,14 +139,17 @@ def confirm(request, ass_c_id):
             status = 'False'
         if assc.status == 1:
             try:
-                a = Attendance.objects.get(course=cr, student=s, date=assc.date, attendanceclass=assc)
+                a = Attendance.objects.get(
+                    course=cr, student=s, date=assc.date, attendanceclass=assc)
                 a.status = status
                 a.save()
             except Attendance.DoesNotExist:
-                a = Attendance(course=cr, student=s, status=status, date=assc.date, attendanceclass=assc)
+                a = Attendance(course=cr, student=s, status=status,
+                               date=assc.date, attendanceclass=assc)
                 a.save()
         else:
-            a = Attendance(course=cr, student=s, status=status, date=assc.date, attendanceclass=assc)
+            a = Attendance(course=cr, student=s, status=status,
+                           date=assc.date, attendanceclass=assc)
             a.save()
             assc.status = 1
             assc.save()
@@ -138,7 +161,8 @@ def confirm(request, ass_c_id):
 def t_attendance_detail(request, stud_id, course_id):
     stud = get_object_or_404(Student, USN=stud_id)
     cr = get_object_or_404(Course, id=course_id)
-    att_list = Attendance.objects.filter(course=cr, student=stud).order_by('date')
+    att_list = Attendance.objects.filter(
+        course=cr, student=stud).order_by('date')
     return render(request, 'info/t_att_detail.html', {'att_list': att_list, 'cr': cr})
 
 
@@ -176,7 +200,8 @@ def e_confirm(request, assign_id):
         else:
             status = 'False'
         date = request.POST['date']
-        a = Attendance(course=cr, student=s, status=status, date=date, attendanceclass=assc)
+        a = Attendance(course=cr, student=s, status=status,
+                       date=date, attendanceclass=assc)
         a.save()
 
     return HttpResponseRedirect(reverse('t_clas', args=(ass.teacher_id, 1)))
@@ -245,7 +270,8 @@ def t_timetable(request, teacher_id):
 def free_teachers(request, asst_id):
     asst = get_object_or_404(AssignTime, id=asst_id)
     ft_list = []
-    t_list = Teacher.objects.filter(assign__class_id__id=asst.assign.class_id_id)
+    t_list = Teacher.objects.filter(
+        assign__class_id__id=asst.assign.class_id_id)
     for t in t_list:
         at_list = AssignTime.objects.filter(assign__teacher=t)
         if not any([True if at.period == asst.period and at.day == asst.day else False for at in at_list]):
@@ -340,5 +366,6 @@ def edit_marks(request, marks_c_id):
 @login_required()
 def student_marks(request, assign_id):
     ass = Assign.objects.get(id=assign_id)
-    sc_list = StudentCourse.objects.filter(student__in=ass.class_id.student_set.all(), course=ass.course)
+    sc_list = StudentCourse.objects.filter(
+        student__in=ass.class_id.student_set.all(), course=ass.course)
     return render(request, 'info/t_student_marks.html', {'sc_list': sc_list})

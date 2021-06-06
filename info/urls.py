@@ -4,7 +4,10 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index, name='fciscu'),
+    path('studentservices/', views.studentservices, name='studentservices'),
+    path('about/', views.about, name='about'),
+    path('studyatfci/', views.studyatfci, name='studyatfci'),
     path('student/<slug:stud_id>/attendance/',
          views.attendance, name='attendance'),
     path('student/<slug:stud_id>/<slug:course_id>/attendance/',

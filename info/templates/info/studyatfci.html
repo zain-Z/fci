@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>كلية الحاسبات و المعلومات</title>
+    {% load static %}
+    <link rel="shortcut icon" href="../images/fci-logo.ico">
+    <meta name="Description"
+        content=" ">
+    <!--Main Element CSS-->
+    <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/form.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Flexy Menu CSS-->
+    <link href="{% static '/info/homepage/css/flexy-menu.css' %}" rel="stylesheet" type="text/css">
+    <!--LayerSlider CSS-->
+    <link href="../layerslider/css/layerslider.css" rel="stylesheet" type="text/css">
+    <!--Important Owl CSS-->
+    <link href="{% static '/info/homepage/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <!--Owl DefaultTheme -->
+    <link href="{% static '/info/homepage/css/owl.theme.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{% static '/info/homepage/css/2-second-layout-color-5.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}" media="screen" />
+
+</head>
+
+<body>
+    <ul class="flexy-menu">
+    <li id="home" style="float: left;">
+        <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home </a>
+    </li>
+    <li id="number" style="float: left;">
+        <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+        <div class="menu-space"></div>
+    </li>
+    <li id="about" style="float: left;">
+        <a href="#"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+        <div class="menu-space"></div>
+    </li>
+    <li id="contact" style="float: left;">
+        <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+        <div class="menu-space"></div>
+    </li>
+    <li id="contact">
+        <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
+        <div class="menu-space"></div>
+    </li>
+    </ul>
+    <section class="top-header">
+        <div class="wrapper topwrap">
+    
+        </div>
+    </section>
+    <div className="slideshow">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'info/images/2.jpg' %}" class="d-block w-100" alt="slideShow" style="height: 1000px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Top Header End-->
+
+    <div class="wrapper">
+
+        <!--Logo and Main Menu Start
+        <header class="header-section">
+
+            
+            <div class="logo">
+                <div class="logo-wrapper">
+                    <a href="#"><img src="../images/fci-logo.png" /></a>
+                </div>
+
+            </div>
+        -->
+
+            <!--End-->
+            <!--Navigation Menu Start
+
+            <ul class="flexy-menu">
+                <li id="home">
+                    <a href="#"> 
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                </li>
+                <li id="number">
+                    <a href="#">
+                        <i class="fa fa-thumbs-o-up"></i> About
+                    </a>
+                    <div class="menu-space">
+                    </div>
+                </li>
+                <li id="contact"><a href="#"><i class="fa fa-users"></i> Study At FCI</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="about"><a href="#"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Student Services</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Log in</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
+                    <div class="menu-space"></div>
+                </li>
+            </ul>
+        -->
+        </header>
+
+        <div class="container">
+
+            <!--All Content Start-->
+            <div class="content-wrapper">
+            </div>
+            <!--All Content End-->
+            <!--Footer Start-->
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-top">
+
+            <div className= "Text">
+                <h2 style="text-align:center;"> القبول </h2> 
+                            <br />
+                    <h5 style="text-align:center;">تعتبر كلية الحاسبات و المعلومات واحدة من أهم الكليات ذات الاقبال القوي من قبل الطلاب في الوقت الحالي ,<br />
+                        فهي من الكليات الرائدة في دراسة الحاسبات و المعلومات في مصر , حيث تتميز بوجود العديد من التخصصات التكنولوجية الدقيقة بها <br />
+                    </h5> <br />
+                              </div>
+                          <hr/>   
+                          <br />
+                              
+                              
+                    <h4>شروط القبول </h4>
+                          <br />
+                        <thead>
+                            <tr>
+                            <th scope="col">أن يكون الطالب المتقدم للكلية من الطلاب الحاصلين على الثانوية العامة شعبة الرياضيات (علمي رياضة)</th> 
+                            </tr>
+                        </thead>
+                          <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الحصول على الحد الأدنى للقبول بالكلية الذي يحدده مكتب التنسيق كل عام</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                          <br />
+                          <hr/>     
+                            <br />
+                            
+                          
+                    <h4 className="text-center fw-bolder fs-2 text-start fst-italic" >شهادات الالتحاق </h4>
+                          <br />
+                        <thead>
+                            <tr>
+                            <th scope="col">ثانوية عامة (علمي رياضة)</th> 
+                            </tr>
+                        </thead>
+                          <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الدبلومة الأمريكية</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الدبلومة البريطانية</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الشهادات المعادلة</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                          <br />
+                          <hr/>
+                          
+                          <br />
+                          
+                          
+                    <h4 className="text-center fw-bolder fs-2 fst-italic" >الدرجات العلمية التي تمنحها الكلية </h4> 
+                          <br />       
+                        <thead>
+                            <tr>
+                            <th scope="col">البكالوريوس</th> 
+                            </tr>
+                        </thead>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الدبلوم</th> 
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الماجستير</th> 
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">الدكتوراه</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                          <br />
+                          <hr/>
+                          <br />
+                          
+                          
+                    <h4>برامج الدبلوم </h4> 
+                          <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">تمنح الكلية درجة الدبلوم في برنامج نظم تكنولوجيا المعلومات التابع لقسم علوم الحاسب</th> 
+                            </tr>
+                        </thead>
+                          <br />
+                          <br />
+                          <hr/>
+                          
+                          <br />       
+                          
+                    <h4 className="ttext-center fw-bolder fs-2 fst-italic">برامج الدراسات العليا</h4>
+                          <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">N/A</th> 
+                            </tr>
+                        </thead>
+                          <br />
+                          <br />
+                          <hr/>
+                          <br />
+                          
+                          
+                    <h4 className="text-center fw-bolder fs-2 fst-italic" >برامج الماجستير</h4> 
+                          <br />
+                        <thead>
+                            <tr>
+                            <th scope="col">:تمنح الكلية درجة الماجستير في الأقسام التالية</th> 
+                            </tr>
+                        </thead>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">علوم الحاسب</th> 
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">نظم المعلومات</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                          <br >
+                          <hr/>
+                          <br />
+                          
+                          
+                    <h4 className="text-center fw-bolder fs-2 fst-italic" >برامج الدكتوراه</h4> 
+                          <br />
+                        <thead>
+                            <tr>
+                            <th scope="col">:تمنح الكلية درجة الدكتوراه في الأقسام التالية</th> 
+                            </tr>
+                        </thead>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">علوم الحاسب</th> 
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                            <th scope="col">نظم المعلومات</th> 
+                            </tr>
+                        </tbody>
+                          <br />
+                          <br />
+                          <hr/>
+                          <br />
+                          
+                          
+                    <h4 className="text-center fw-bolder fs-2 fst-italic" >عدد سنوات الدراسة</h4> 
+                          <br />
+                        <thead>
+                            <tr>
+                            <th scope="col">4</th> 
+                            </tr>
+                        </thead>
+                          <br />
+                          <br />
+                          <hr/>
+                          <br />
+                          
+                          
+                                  <h4 className="text-center fw-bolder fs-2 fst-italic" >سنة التخصص</h4> 
+                          <br />
+                          <thead>
+                            <tr>
+                            <th scope="col">السنة الدراسية الثالثة</th> 
+                            </tr>
+                          </thead>
+
+
+                    </div>
+
+
+
+<div class="footer-bottom">
+    <div class="copyright">
+                            Copyright © 2019  <a target="_blank" >FCI</a>
+    </div>
+
+    </div>
+                    <!--Footer Bottom End-->
+
+                </div>
+
+
+                <!--Go To Top-->
+                <a href="#" class="back-to-top"></a>
+                <!--End-->
+
+            </footer>
+            <!--Footer End-->
+
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/greensock.js"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="../js/flexy-menu.js"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js"></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js"></script>
+    <!-- COLORBOX LIGHTBOX SCRIPT -->
+    <script type="text/javascript" src="../js/jquery.colorbox.js"></script>
+    <!--Social Share Button Script-->
+    <script src="../js/jquery.sharrre.min.js" type="text/javascript"></script>
+    <!-- Fancybox Script -->
+    <script type="text/javascript" src="../js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+    <!--Tooltip Script-->
+    <script type="text/javascript" src="../js/tooltip.js"></script>
+    <!--Placeholder Script-->
+    <script type="text/javascript" src="../js/placeholder.js"></script>
+    <!--model Script-->
+    <script type="text/javascript" src="../js/jquery.modal.min.js"></script>
+    <!--Custom-->
+    <script type="text/javascript" src="../js/custom.js"></script>
+
+
+
+    <script src="../js/slideshow.js"></script>
+
+
+</body>
+
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+
+</html>
