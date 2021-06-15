@@ -8,7 +8,7 @@
     <title>كليةالحاسبات و المعلومات</title>
     {% load static %}
     
-    <link rel="shortcut icon" href="images/fci-logo.ico">
+    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
     <meta name="Description"
         content="">
     <!--Main Element CSS-->
@@ -34,6 +34,7 @@
 
 <body class="d-block w-100" alt="slideShow" >
     <style type="text/css">
+
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -52,7 +53,6 @@ body {
     }
 }
      </style>
- 
     <br />
     <br />
             </div>
@@ -67,7 +67,7 @@ body {
                 <div class="logo">
                     <div class="logo-wrapper">
                         <a href="{% url 'fciscu' %}">
-                            <img src="{% static 'info/images/fci-logo.png' %}" />
+                            <img src="{% static 'info/images/fci-logo.jpg' %}" style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
                         </a>
                          <!--Navigation Menu Start-->
          <ul class="flexy-menu"  >

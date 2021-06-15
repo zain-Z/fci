@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>كلية الحاسبات و المعلومات</title>
     {% load static %}
-    <link rel="shortcut icon" href="../images/fci-logo.ico">
+    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
     <meta name="Description"
         content=" ">
     <!--Main Element CSS-->
@@ -30,93 +30,59 @@
     <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}" media="screen" />
 
 </head>
-
-<body>
-    <ul class="flexy-menu">
-    <li id="home" style="float: left;">
-        <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home </a>
-    </li>
-    <li id="number" style="float: left;">
-        <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
-        <div class="menu-space"></div>
-    </li>
-    <li id="about" style="float: left;">
-        <a href="#"><i class="fa fa-lightbulb-o"></i> News & Events</a>
-        <div class="menu-space"></div>
-    </li>
-    <li id="contact" style="float: left;">
-        <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
-        <div class="menu-space"></div>
-    </li>
-    <li id="contact">
-        <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
-        <div class="menu-space"></div>
-    </li>
-    </ul>
-    <section class="top-header">
-        <div class="wrapper topwrap">
+<style type="text/css">
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 30s ease infinite;
+    }
     
-        </div>
-    </section>
-    <div className="slideshow">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'info/images/2.jpg' %}" class="d-block w-100" alt="slideShow" style="height: 1000px;"/>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Top Header End-->
-
-    <div class="wrapper">
-
-        <!--Logo and Main Menu Start
-        <header class="header-section">
-
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+         </style>
+<body>
+     <!--Top Header Start-->
+     <section class="top-header" style="padding-bottom: 60px;" >
+        <div class="wrapper topwrap">
             
-            <div class="logo">
-                <div class="logo-wrapper">
-                    <a href="#"><img src="../images/fci-logo.png" /></a>
-                </div>
+            <ul class="flexy-menu" style="padding-left: 275px;">
+                <li id="home" style="float:left;">
+                    <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i>Home</a>
+                </li>
+                <li id="number" style="float:left;">
+                    <a href="{% url 'about' %}" ><i class="fa fa-thumbs-o-up"></i> About</a>
+                    <div class="menu-space"></div>
 
-            </div>
-        -->
-
-            <!--End-->
-            <!--Navigation Menu Start
-
-            <ul class="flexy-menu">
-                <li id="home">
-                    <a href="#"> 
-                        <i class="fa fa-home"></i> Home
-                    </a>
                 </li>
-                <li id="number">
-                    <a href="#">
-                        <i class="fa fa-thumbs-o-up"></i> About
-                    </a>
-                    <div class="menu-space">
-                    </div>
-                </li>
-                <li id="contact"><a href="#"><i class="fa fa-users"></i> Study At FCI</a>
+                <li id="about" style="float:left;"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="about"><a href="#"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="contact" style="float:left;"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Student Services</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Log in</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
+                <li id="contact" style="float:left;">
+                    <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
                     <div class="menu-space"></div>
                 </li>
             </ul>
-        -->
-        </header>
+        </div>
+    </section>
+    <!--Top Header End-->
+</header>
+
+    <div class="wrapper">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <div class="container">
 
@@ -125,8 +91,8 @@
             </div>
             <!--All Content End-->
             <!--Footer Start-->
-<footer class="footer-section">
-    <div class="footer-content">
+<footer class="footer-section" >
+    <div class="footer-content" style="padding-left: 200px;">
         <div class="footer-top">
 
             <div className= "Text">

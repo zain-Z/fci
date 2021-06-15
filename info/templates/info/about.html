@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>كلية الحاسبات و المعلومات</title>
     {% load static %}
-    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.ico' %}">
+    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
     <meta name="Description"
         content="Author: It Force, Illustrator: Mobile, Category: Mobile, اسعار الموبيلات فى مصر , احدث اسعار الموبيلات فى مصر ,  الشناوى , الشناوى للموبيلات">
     <!--Main Element CSS-->
@@ -57,27 +57,27 @@
             <div class="logo">
                 <div class="logo-wrapper">
                     <a href="{% url 'fciscu' %}"> 
-                        <img src="{% static 'info/images/fci-logo.png' %}" style="padding-top: 20px;" /></a>
+                        <img src="{% static 'info/images/fci-logo.jpg' %}" style="width: 200px; mix-blend-mode: multiply; padding-right: 25px; padding-top: 70px;" /></a>
                 </div>
 
             </div>
 
-            <ul class="flexy-menu">
-                <li id="home">
+            <ul class="flexy-menu" style="padding-right: 35px; ">
+                <li id="home" style="text-align: center;">
                     <a href="{% url 'fciscu' %}"> 
                         <i class="fa fa-home"></i> Home 
                     </a>
                 </li>
-                <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+                <li id="contact" style="text-align: center;"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="about"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="about" style="text-align: center;"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+                <li id="contact" style="text-align: center;"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact">
+                <li id="contact" style="text-align: center;">
                     <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
                     <div class="menu-space"></div>
                 </li>
@@ -181,7 +181,8 @@
      
 
         <img className="img-fluid rounded mb-4 mb-lg-0" src="http://portal.suez.edu.eg/fci/sites/default/files/inline-images/goals.png" alt="" 
-        style="width: 600px;
+        style="
+        width: 600px;
         height:400px; 
         display: block;
         margin-left: auto; 

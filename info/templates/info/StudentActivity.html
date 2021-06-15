@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>كلية الحاسبات و المعلومات</title>
     {% load static %}
-    <link rel="shortcut icon" href="images/fci-logo.ico">
+    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
     <meta name="Description"
     <!--Main Element CSS-->
     <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet">
@@ -85,7 +85,7 @@
             <div class="logo">
                 <div class="logo-wrapper">
                     <a href="{% url 'fciscu' %}">
-                        <img src="{% static 'info/images/fci-logo.png' %}" />
+                        <img src="{% static 'info/images/fci-logo.jpg' %}" style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
                     </a>
                 </div>
             </div>
