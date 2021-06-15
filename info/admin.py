@@ -11,12 +11,11 @@ from .models import StudentCourse, Marks, User, AttendanceRange
 # Register your models here.
 
 days = {
-    'Monday': 1,
-    'Tuesday': 2,
-    'Wednesday': 3,
-    'Thursday': 4,
-    'Friday': 5,
-    'Saturday': 6,
+    'Sunday': 1,
+    'Monday': 2,
+    'Tuesday': 3,
+    'Wednesday': 4,
+    'Thursday': 5,
 }
 
 
@@ -43,9 +42,9 @@ class StudentInline(admin.TabularInline):
 
 
 class ClassAdmin(admin.ModelAdmin):
-    list_display = ('id', 'dept', 'sem', 'section')
-    search_fields = ('id', 'dept__name', 'sem', 'section')
-    ordering = ['dept__name', 'sem', 'section']
+    list_display = ('id', 'dept', 'level', 'section')
+    search_fields = ('id', 'dept__name', 'level', 'section')
+    ordering = ['dept__name', 'level', 'section']
     inlines = [StudentInline]
 
 
@@ -63,7 +62,8 @@ class AssignTimeInline(admin.TabularInline):
 class AssignAdmin(admin.ModelAdmin):
     inlines = [AssignTimeInline]
     list_display = ('class_id', 'course', 'teacher')
-    search_fields = ('class_id__dept__name', 'class_id__id', 'course__name', 'teacher__name', 'course__shortname')
+    search_fields = ('class_id__dept__name', 'class_id__id',
+                     'course__name', 'teacher__name', 'course__shortname')
     ordering = ['class_id__dept__name', 'class_id__id', 'course__id']
     raw_id_fields = ['class_id', 'course', 'teacher']
 
@@ -76,8 +76,10 @@ class MarksInline(admin.TabularInline):
 class StudentCourseAdmin(admin.ModelAdmin):
     inlines = [MarksInline]
     list_display = ('student', 'course',)
-    search_fields = ('student__name', 'course__name', 'student__class_id__id', 'student__class_id__dept__name')
-    ordering = ('student__class_id__dept__name', 'student__class_id__id', 'student__USN')
+    search_fields = ('student__name', 'course__name',
+                     'student__class_id__id', 'student__class_id__dept__name')
+    ordering = ('student__class_id__dept__name',
+                'student__class_id__id', 'student__USN')
 
 
 class StudentAdmin(admin.ModelAdmin):
@@ -106,8 +108,10 @@ class AttendanceClassAdmin(admin.ModelAdmin):
 
     def reset_attd(self, request):
 
-        start_date = datetime.strptime(request.POST['startdate'], '%Y-%m-%d').date()
-        end_date = datetime.strptime(request.POST['enddate'], '%Y-%m-%d').date()
+        start_date = datetime.strptime(
+            request.POST['startdate'], '%Y-%m-%d').date()
+        end_date = datetime.strptime(
+            request.POST['enddate'], '%Y-%m-%d').date()
 
         try:
             a = AttendanceRange.objects.all()[:1].get()
@@ -124,9 +128,11 @@ class AttendanceClassAdmin(admin.ModelAdmin):
             for single_date in daterange(start_date, end_date):
                 if single_date.isoweekday() == days[asst.day]:
                     try:
-                        AttendanceClass.objects.get(date=single_date.strftime("%Y-%m-%d"), assign=asst.assign)
+                        AttendanceClass.objects.get(
+                            date=single_date.strftime("%Y-%m-%d"), assign=asst.assign)
                     except AttendanceClass.DoesNotExist:
-                        a = AttendanceClass(date=single_date.strftime("%Y-%m-%d"), assign=asst.assign)
+                        a = AttendanceClass(date=single_date.strftime(
+                            "%Y-%m-%d"), assign=asst.assign)
                         a.save()
 
         self.message_user(request, "Attendance Dates reset successfully!")

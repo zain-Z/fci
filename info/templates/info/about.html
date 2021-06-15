@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>كلية الحاسبات و المعلومات</title>
     {% load static %}
-    <link rel="shortcut icon" href="../images/logoIco.ico">
+    <link rel="shortcut icon" href="{% static 'info/images/fci-logo.ico' %}">
     <meta name="Description"
         content="Author: It Force, Illustrator: Mobile, Category: Mobile, اسعار الموبيلات فى مصر , احدث اسعار الموبيلات فى مصر ,  الشناوى , الشناوى للموبيلات">
     <!--Main Element CSS-->
@@ -42,20 +42,14 @@
     <!--Top Header End-->
     
     <div class="wrapper">
-
-        <!--Logo and Main Menu Start-->
         <header class="header-section">
-
-            <!--Logo Start-->
             <div class="logo">
                 <div class="logo-wrapper">
-                    <a href="../index.html">
+                    <a href="{% url 'fciscu' %}"> 
                         <img src="{% static 'info/images/fci-logo.png' %}" /></a>
                 </div>
 
             </div>
-            <!--End-->
-            <!--Navigation Menu Start-->
 
             <ul class="flexy-menu">
                 <li id="home">
@@ -66,10 +60,10 @@
                 <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="about"><a href="#"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="about"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Student Services</a>
+                <li id="contact"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
                 <li id="contact">
@@ -111,23 +105,24 @@
                     
         <p className="font-weight-light"></p>
 
-        <br />
-        <h3> Historical note </h3>
-            <p>The faculty of Computers and Informatics SCU was founded in 1995 according to Supreme Universities Council decree in its session no. (342). It was founded under the name "the faculty of Information Sciences SCU". That name was later changed to "the faculty of Computers and Informatics SCU" according to the Supreme Universities Council decree no. (343). The faculty started welcoming tech-enthusiasts in April 1997, and the actual academic study started in September 1997. The faculty witnessed the graduation of the first generation in 2001..</p>
+        <br /><br /><br />
+        <h3 style="text-align: center;"> Historical note </h3><br />
+        <hr /><br />
+            <p style="text-align: left;">.The faculty of Computers and Informatics SCU was founded in 1995 according to Supreme Universities Council decree in its session no. (342)<br> It was founded under the name "the faculty of Information Sciences SCU". That name was later changed to "the faculty of Computers and Informatics SCU" according to the Supreme Universities Council decree no. (343). The faculty started welcoming tech-enthusiasts in April 1997, and the actual academic study started in September 1997 <br>.The faculty witnessed the graduation of the first generation in 2001</p>
 
-<br />                   
-    <h3>Mission</h3>
-<hr />
+<br /> <br />                  
+    <h3 style="text-align: center;">Mission</h3><br />
+<hr /><br />
 <br />
-        <p>.The faculty of Computers and Informatics SCU is committed to graduating individuals of high academic value to satisfy the needs of the marketplace <br /> The faculty also seeks to prepare individuals who are capable of competing under the name of the faculty while committing to the ethical charter of the field</p>
+<p style="text-align: left;">The faculty of Computers and Informatics SCU is committed to graduating individuals of high academic value to satisfy the needs of the marketplace <br /> The faculty also seeks to prepare individuals who are capable of competing under the name of the faculty while committing to the ethical charter of the field</p>
         <p></p>
 
 
-<br />                
-    <h3>Vision</h3>
-<hr/>
+<br />   <br />             
+    <h3 style="text-align: center;">Vision</h3><br />
+<hr/><br />
 <br />
-        <p className="font-weight-light">The faculty of Computers and Informatics SCU aims to be a distinguished academic institution for research and innovation by offering outstanding technical service for both the national and regional societies</p>                                         
+        <p className="font-weight-light" style="text-align: left;">.The faculty of Computers and Informatics SCU aims to be a distinguished academic institution for research and innovation by offering outstanding technical service for both the national and regional societies</p>                                         
     <br />
     </div>
 </section>
@@ -157,20 +152,33 @@
         <div class="footer-content">
             <div class="footer-top">
 
-                <h2>Goals</h2>
-        <ul>
-          <li>Preparing competent graduates who are capable of satisfying the market needs in the field of software development and information system. </li>
-          <li>Developing the potentials of both the academic and administrative staff. </li>
-          <li>Encouraging the conduct of applied research in collaboration with distinguished cadres in national and international societies.  </li>
-          <li>Activating the comprehensive quality system in all the faculty's sectors.</li>
-          <li>Increasing the faculty's role in community service.</li>
-          <li>Preserving the faculty's infrastructure.</li>
-          <li>Growing the self-secured resources of the faculty. </li>
-          <li>Developing the faculty's management system to be ready for digitalization. </li>
-        </ul>
-                  
-        <img className="img-fluid rounded mb-4 mb-lg-0" src="http://portal.suez.edu.eg/fci/sites/default/files/inline-images/goals.png" alt="" style="width: 500px;"/>
-            </div>
+                <h2 style="text-align: center;">Goals</h2>
+                <br>
+        <div style="text-align: left;">
+          <p>.Preparing competent graduates who are capable of satisfying the market needs in the field of software development and information system </p>
+          <p>.Developing the potentials of both the academic and administrative staff</p>
+          <p>.Encouraging the conduct of applied research in collaboration with distinguished cadres in national and international societies </p>
+          <p>.Activating the comprehensive quality system in all the faculty's sectors</p>
+          <p>.Increasing the faculty's role in community service</p>
+          <p>.Preserving the faculty's infrastructure</p>
+          <p>.Growing the self-secured resources of the faculty </p>
+          <p>.Developing the faculty's management system to be ready for digitalization </p>
+        </div>
+        <br>   
+
+        
+     
+
+        <img className="img-fluid rounded mb-4 mb-lg-0" src="http://portal.suez.edu.eg/fci/sites/default/files/inline-images/goals.png" alt="" 
+        style="width: 600px;
+        height:400px; 
+        display: block;
+        margin-left: auto; 
+        margin-right: auto; 
+        border-radius: 100%;
+        box-sizing: border-box;
+        border-bottom: 20px solid transparent;"/> 
+            </div> 
     
                        
         <div class="footer-bottom">
@@ -190,34 +198,34 @@
     
     <div class="clearfix"></div>
     
-        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="js/greensock.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
         <!--Flexy Menu Script-->
-        <script type="text/javascript" src="js/flexy-menu.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
         <!--LayerSlider Script-->
         <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
         <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
         <!--Carousel Plugin Script-->
-        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
         <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
         <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js"></script>
         <!-- COLORBOX LIGHTBOX SCRIPT -->
-        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
         <!--Social Share Button Script-->
-        <script src="js/jquery.sharrre.min.js" type="text/javascript"></script>
+        <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
         <!-- Fancybox Script -->
-        <script type="text/javascript" src="js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
         <!--Tooltip Script-->
-        <script type="text/javascript" src="js/tooltip.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
         <!--Placeholder Script-->
-        <script type="text/javascript" src="js/placeholder.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
         <!--model Script-->
-        <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
         <!--Custom-->
-        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
     
     
-        <script src="js/slideshow.js"></script>
+        <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
     
     
     </body>
