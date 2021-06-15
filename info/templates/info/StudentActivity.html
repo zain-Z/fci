@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>كلية الحاسبات و المعلومات</title>
+    {% load static %}
+    <link rel="shortcut icon" href="images/fci-logo.ico">
+    <meta name="Description"
+    <!--Main Element CSS-->
+    <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+   <!--Flexy Menu CSS-->
+   <link href="{% static '/info/homepage/css/flexy-menu.css' %}" rel="stylesheet">
+   <!--LayerSlider CSS-->
+   <link href="layerslider/css/layerslider.css" rel="stylesheet" type="text/css">
+   <!--Important Owl CSS-->
+   <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+   <!--Owl DefaultTheme -->
+   <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+
+   <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/2-second-layout-color-5.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.simplyscroll.css" media="screen" />
+
+</head>
+<style type="text/css">
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 30s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+         </style>
+<body>
+    <!--Top Header Start-->
+    <section class="top-header" style="padding-bottom: 60px;" >
+        <div class="wrapper topwrap">
+            
+            <ul class="flexy-menu" style="padding-left: 30px;">
+                <li id="home" style="float:left;">
+                    <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i>Home</a>
+                </li>
+                <li id="number" style="float:left;">
+                    <a href="{% url 'about' %}" ><i class="fa fa-thumbs-o-up"></i> About</a>
+                    <div class="menu-space"></div>
+
+                </li>
+                <li id="contact" style="float:left;"><a href="{% url 'studyatfci' %}" ><i class="fa fa-users"></i> Study At FCI</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="about" style="float:left;"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact" style="float:left;"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact" style="float:left;">
+                    <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
+                    <div class="menu-space"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Top Header End-->
+
+    <div class="wrapper">
+        <header class="header-section">
+            <div class="logo">
+                <div class="logo-wrapper">
+                    <a href="{% url 'fciscu' %}">
+                        <img src="{% static 'info/images/fci-logo.png' %}" />
+                    </a>
+                </div>
+            </div>
+        
+           
+
+        </header>
+        <br />
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="stripe service-panel">
+                    <nav className="navbar navbar-light bg-light">
+                        <div className="container-fluid">
+                          <h2>الأنشطة الطلابية</h2>
+                        </div>
+                      </nav>
+                      <br />
+                              <p>أن كلية الحاسبات والمعلومات ليست للدراسة فقط و لكن لتفتح المواهب و التعبير عن الطاقات الكامنة عند الطلاب في مختلف المجالات الثقافية و الاجتماعية و الفنية والرياضية و الجوالة من أجل تنمية شخصية
+                                الطلاب و اثراء شخصيتهم و تبصيرهم بطبيعة المجتمع و دور الثقافة في عملية التنمية سواء تنمية الوطن أو تنمية الذات و القدرات الشخصية فضلا عن نشر الوعي الثقافي و الأدبي و الفني
+                              </p>
+                              <br />
+                                  
+                                      <thead>
+                                          <tr>
+                                              <th scope="col">
+                                                  <a href="file:///E:/Project/Home/ActivitySport.html" style="text-decoration: none;">النشاط الرياضي</a><br />
+                                              </th> 
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th scope="col">
+                                                  <a href="file:///E:/Project/Home/ArtisticCultural.html" style="text-decoration: none;">النشاط الفني</a><br />
+                                              </th>
+                                          </tr>
+                                      </tbody>
+                                      <tbody>
+                                          <tr>
+                                              <th scope="col">         
+                                                   <a href="file:///E:/Project/Home/CulturalActivity.html" style="text-decoration: none;">النشاط الثقافي</a><br />
+                                              </th>
+                                          </tr>
+                                      </tbody>
+                          
+<br />
+<br />
+<br />
+
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2019  <a target="_blank" >FCI</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--Go To Top-->
+                <a href="#" class="back-to-top"></a>
+                <!--End-->
+
+            </footer>
+            <!--Footer End-->
+
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/greensock.js"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="../js/flexy-menu.js"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js"></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js"></script>
+    <!-- COLORBOX LIGHTBOX SCRIPT -->
+    <script type="text/javascript" src="../js/jquery.colorbox.js"></script>
+    <!--Social Share Button Script-->
+    <script src="../js/jquery.sharrre.min.js" type="text/javascript"></script>
+    <!-- Fancybox Script -->
+    <script type="text/javascript" src="../js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+    <!--Tooltip Script-->
+    <script type="text/javascript" src="../js/tooltip.js"></script>
+    <!--Placeholder Script-->
+    <script type="text/javascript" src="../js/placeholder.js"></script>
+    <!--model Script-->
+    <script type="text/javascript" src="../js/jquery.modal.min.js"></script>
+    <!--Custom-->
+    <script type="text/javascript" src="../js/custom.js"></script>
+
+
+
+    <script src="../js/slideshow.js"></script>
+
+
+</body>
+
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+
+</html>

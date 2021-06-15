@@ -32,18 +32,33 @@
 
 </head>
 
-<body background="{% static 'info/images/slider.jpg' %}" class="d-block w-100" alt="slideShow" >
-     
+<body class="d-block w-100" alt="slideShow" >
+    <style type="text/css">
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+     </style>
  
     <br />
     <br />
             </div>
-            <h1 style="text-align:center; color:white;">!Welcome to The Faculty of Computer and Informatics</h1> 
+            <h1 style="text-align:center; color:white;">WElCOME TO THE FACULTY OF COMPUTERS AND INFORMATICS</h1> 
             <br /><br />
-            <h3 style="text-align:center; color:white;">.The miracles of the Egyptian Scientists from seven thousand years ago are still surprising all researchers 
-                over the world<br /><br /> .The genes of glory-making inherited from the ancestors are reshaping the future and the 
-                status that Egypt deserves among nations 
-            </h3>
+            <h3 style="text-align:center; color:white;">.COMMITTED TO CREATING A BRIGHTER WORLD</h3>
         </div>  
 
     <div class="wrapper">
@@ -112,7 +127,7 @@
         <div id="columns" class="columns_5" style="width:117%; padding-top: 5px; margin-top:-15px;">
             <figure style="width:25.5%;">
                 <img src="{% static 'info/images/4.jpg' %}" />
-                    <a class="button" target="_blank" href="file:///E:/Project/Home/News&Events.html" style="font-size: 18px; text-align:center;">
+                    <a class="button" target="_blank" href="{% url 'studentactivity' %}" style="font-size: 18px; text-align:center;">
                         <i class="fa fa-search-plus"></i>
                         Student Activities
                     </a>
@@ -210,7 +225,7 @@
                                     <i class="fa">
                                         <img src="{% static 'info/images/footer-icon-maps.png' %}" style="width: 50px;"/>
                                     </i>
-                                        <span>الخريطة: <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8777.55527104764!2d32.26590377595747!3d30.62170881133509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8597f201556e7%3A0x9bd6053867337ff3!2sSuez%20Canal%20University!5e0!3m2!1sen!2seg!4v1623721981712!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> Maps</span>
+                                        <span>الخريطة: <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8777.55527104764!2d32.26590377595747!3d30.62170881133509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8597f201556e7%3A0x9bd6053867337ff3!2sSuez%20Canal%20University!5e0!3m2!1sen!2seg!4v1623721981712!5m2!1sen!2seg" width="730" height="450" style="border:0px;" allowfullscreen="" loading="lazy"></iframe> Maps</span>
                                 </div>
                             </li>
                         </ul>

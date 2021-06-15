@@ -38,6 +38,12 @@ def studyatfci(request):
         return render(request, 'info/studyatfci.html')
 
 
+@login_required
+def studentactivity(request):
+    if request.user.is_student:
+        return render(request, 'info/StudentActivity.html')
+
+
 @login_required()
 def attendance(request, stud_id):
     stud = Student.objects.get(USN=stud_id)

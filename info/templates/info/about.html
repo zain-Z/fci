@@ -31,22 +31,33 @@
 
 </head>
 
-<body>
-    <!--Top Header Start-->
-    <section class="top-header">
-
-        <div class="wrapper topwrap">
-
-        </div>
-    </section>
-    <!--Top Header End-->
+<body >
+    <style type="text/css">
     
-    <div class="wrapper">
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+             </style>
+    <div class="wrapper" >
         <header class="header-section">
             <div class="logo">
                 <div class="logo-wrapper">
                     <a href="{% url 'fciscu' %}"> 
-                        <img src="{% static 'info/images/fci-logo.png' %}" /></a>
+                        <img src="{% static 'info/images/fci-logo.png' %}" style="padding-top: 20px;" /></a>
                 </div>
 
             </div>
@@ -82,7 +93,7 @@
     <div class="content-wrapper">
         <div className="main" >
                     <br />
-            <h1 style="text-align:center;"> Why the Faculty of Computers and Informatics at SCU </h1>
+            <h1 style="text-align:center; padding-top: 30px; color:white;"> Why the Faculty of Computers and Informatics at SCU </h1>
                     <br />
         <div className="slideshow">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

@@ -119,11 +119,11 @@
   <div class="inputGroup inputGroup1">
     {% csrf_token %}
     <label for="email1">Username:</label>
-	<input type="text" id="email" class="email" maxlength="256" value={{form.username}}>
+	<input type="text" id="email" class="email" maxlength="256"  value={{form.username}} >
 	</div>
 	<div class="inputGroup inputGroup2">
     <label for="password">Password:</label>
-	<input type="password" id="password" class="password" value={{form.password}}>
+	<input type="password" id="password" class="password" placeholder="Password" value={{form.password}} >
   
 	</div>
 	<div class="inputGroup inputGroup3">
