@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width" />
   <title>كلية الحاسبات و المعلومات</title>
   {% load static %}
-
   <link rel="shortcut icon" href="images/fci-logo.ico">
   <meta name="Description" <!--Main Element CSS-->
   <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
@@ -28,8 +27,9 @@
 
   <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
 
-  <link rel="stylesheet" href="../css/2-second-layout-color-5.css' %}">
-  <link rel="stylesheet" type="text/css" href="../css/jquery.simplyscroll.css' %}" media="screen" />
+  <link rel="stylesheet" href="{% static '/info/homepage/css/2-second-layout-color-5.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}"
+    media="screen" />
 
 </head>
 
@@ -68,8 +68,10 @@
     <header class="header-section">
       <div class="logo">
         <div class="logo-wrapper">
-          <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}"
-              style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" /></a>
+          <a href="{% url 'fciscu' %}">
+            <img src="{% static 'info/images/fci-logo.jpg' %}"
+              style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
+          </a>
         </div>
       </div>
 
@@ -90,12 +92,6 @@
         <li id="about"><a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News & Events</a>
           <div class="menu-space"></div>
         </li>
-        <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
-          <div class="menu-space"></div>
-        </li>
-        <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
-          <div class="menu-space"></div>
-        </li>
       </ul>
 
     </header>
@@ -105,8 +101,7 @@
         <section class="stripe service-panel">
 
           <div class="col-md-10 content-top">
-            <br />
-            <br />
+
             <div class="number">
               <h1>خدمات الطلاب</h1>
               <br />
@@ -121,103 +116,262 @@
 
 
               <br />
-              <table class="table-bordered" style="width:100%;">
+
+              <table class="tables" style="width:100%;border-radius: 50%;">
 
                 <br />
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    <table class="table table-bordered" style="width:100% ; background:#e6f2ff ; border: 1;">
-                      <thead>
-                        <tr>
-                          <th scope="col">
-                            <h5 style="font-weight:bold ; font-size:20px; text-align: right;">امتحانات وجداول</h5>
-                          </th>
-                        </tr>
-                      </thead>
+                    <table class="tables" style="width:100% ;  border: none;">
+                      <!-- 
+                                  <thead>
+                                            <tr>
+                                              <th scope="col">
+                                                <h5 style="font-weight:bold ; font-size:20px; text-align: right;">امتحانات وجداول</h5>
+                                              </th>
+                                            </tr>
+                                          </thead>
+                                        -->
                       <tbody>
                         <tr>
                           <td>
-
-                          </td>
-                          <td>
                             <div class="col-sm-3" style="text-align:center;">
-                              <a href="{% url 'lecture_shedule' %}"> <i class=style="text-decoration: none;">
-                                  <img src="{% static 'info/images/tables.jpg' %}" /><br />
+                              <a href="{% url 'lecture_shedule' %}" style="text-decoration: none;">
+                                <span class="dot">
+                                  <img src="{% static 'info/images/tables.jpg' %}" style="border-radius: 2em;" /><br />
                                   <b>جداول الامتحانات</b>
+                                </span>
                               </a>
                             </div>
                           </td>
                           <td>
                             <div class="col-sm-3" style="text-align:center;">
                               <a href="{% url 'exam_result' %}" style="text-decoration: none;">
-                                <img src="{% static 'info/images/examresults.png' %}" /><br />
-                                <b>نتائج الامتحانات</b>
+                                <span class="dot">
+                                  <img src="{% static 'info/images/examresults.png' %}" /><br />
+                                  <b>نتائج الامتحانات</b>
+                                </span>
                               </a>
                             </div>
-                            <br />
+                          </td>
+                          <td>
+                            <div class="col-sm-3" style="text-align:center;">
+                              <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;">
+                                <span class="dot">
+                                  <img src="{% static 'info/images/guids.png' %}" /><br />
+                                  <b>لوائح الكليات</b>
+                                </span>
+                              </a>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="col-sm-3" style="text-align:center;">
+                              <a href="http://localhost:3000/GraduationCertificate" style="text-decoration: none;">
+                                <span class="dot">
+                                  <img src="{% static 'info/images/courses.png' %}" /><br />
+                                  <b>استخراج شهادة التخرج</b>
+                                </span>
+                              </a>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="col-sm-3" style="text-align:center;">
+                              <a href="#" style="text-decoration: none;">
+                                <span class="dot">
+                                  <img src="{% static 'info/images/ERP2.png' %}"
+                                    style="height: 90px; width: 100px; border-radius: 2em;" /><br />
+                                  <br />
+                                  <b>College ERP</b>
+                                </span>
+                              </a>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="col-sm-3" style="text-align:center;">
+                              <a href="{% url 'studentactivity' %}" style="text-decoration: none;">
+                                <span class="dot">
+                                  <img src="{% static 'info/images/actvites.png' %}"
+                                    style="border-radius: 2em;" /><br />
+                                  <b>الانشطة الطلابية</b>
+                                </span>
+                              </a>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                     <br />
-                    <div class="panel panel-info">
-                      <div class="panel-heading">
-                        <table class="table table-bordered" style="width:100% ;  background:#fff0e6">
-                          <thead>
-                            <tr>
-                              <th scope="col">
-                                <h5 style="font-weight:bold ; font-size:20px; text-align: right;">مقررات</h5>
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
+                    <!--
+<div class="panel panel-info">
+    <div class="panel-heading"> 
+        <table class="tables" style="width:100% ;  background:#fff0e6; border: none;">
+                <thead>
+                    <tr>
+                      <th scope="col">
+                        <h5 style="font-weight:bold ; font-size:20px; text-align: right;">مقررات</h5>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>
 
-                              </td>
-                              <td>
-                                <div class="col-sm-3" style="text-align:center;">
-                                  <a href="{% url 'vision_and_mission' %}" style="text-decoration: none;">
-                                    <img src="{% static 'info/images/guids.png' %}" /><br />
-                                    <b>لوائح الكليات</b>
-                                  </a>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <br />
-                        <div class="panel panel-info">
-                          <div class="panel-heading">
-                            <table class="table table-bordered" style="width:100% ; background:#d6f5d6">
-                              <thead>
-                                <tr>
-                                  <th scope="col">
-                                    <a href="{% url 'studentservices' %}">
-                                      <h5 style="font-weight:bold ; font-size:20px; text-align: right;">خدمات أخرى</h5>
-                                    </a>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td></td>
-                                  <td>
-                                    <div class="col-sm-3" style="text-align:center;">
-                                      <a href="{% url 'studentactivity' %}" style="text-decoration: none;">
-                                        <img src="{% static 'info/images/actvites.png' %}" /><br />
-                                        <b>الانشطة الطلابية</b>
-                                      </a>
-                                    </div>
-                                    <br />
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-
+                        </td>
+                      <td>
+                        <div class="col-sm-3" style="text-align:center;">
+                            <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;"> 
+                              <img src="{% static 'info/images/guids.png' %}"/><br />
+                                <b>لوائح الكليات</b>
+                            </a>
                           </div>
-                        </div>
+                      </td>
+                      <td>
+                        <div class="col-sm-3" style="text-align:center;">
+                            <a href="http://localhost:3000/GraduationCertificate" style="text-decoration: none;">
+                              <img src="{% static 'info/images/courses.png' %}" /><br /> 
+                                <b>استخراج شهادة التخرج</b>
+                            </a>
+                          </div>
+                          <br />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br />
+                <div class="panel panel-info">
+                  <div class="panel-heading"> 
+                      <table class="tables" style="width:100% ;  background:#f2f8cf;">
+                              <thead>
+                                  <tr>
+                                    <th scope="col">
+                                      <h5 style="font-weight:bold ; font-size:20px; text-align: right;">College ERP</h5>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                      <td>
+              
+                                      </td>
+                                    <td>
+                                      <div class="col-sm-3" style="text-align:center;">
+                                          <a href="#" style="text-decoration: none;"> 
+                                            <br />
+                                            <img src="{% static 'info/images/ERP2.png' %}" style="height: 90px; width: 100px; border-radius: 2em;"/><br />
+                                              <b></b>
+                                          </a>
+                                          <br />
+                                        </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+
+
+
+
+
+<br />
+<div class="panel panel-info">
+    <div class="panel-heading"> 
+        <table class="tables" style="width:100% ; background:#d6f5d6; border: none">
+                <thead>
+                    <tr>
+                      <th scope="col">
+                        <h5 style="font-weight:bold ; font-size:20px; text-align: right;">خدمات أخرى</h5>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td></td>
+                      <td >
+                        <div class="col-sm-3" style="text-align:center;">
+                            <a href="file:///E:/Project/Home/StudentActivity.html#" style="text-decoration: none;"> 
+                              <span class="dot">
+                              <img src="{% static 'info/images/actvites.png' %}"/><br />
+                                <b>الانشطة الطلابية</b>
+                                </span>
+                            </a>
+                          </div>
+                          <br />
+                    </td>
+                    </tr>
+                  </tbody>
+                
+
+                </table>
+              
+              <!--
+              <table class="data" style="width: 100%; border-radius: 100%; background:#f2f8cf;">
+                <tr>
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;">
+                      <a href="{% url 'lecture_shedule' %}" style="text-decoration: none;">
+                        <img src="{% static 'info/images/tables.jpg' %}"/><br />
+                          <b>جداول الامتحانات</b>
+                      </a>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;"> 
+                      <a href="file:///E:/Project/Home/ExamResult.html" style="text-decoration: none;">
+                        <img src="{% static 'info/images/examresults.png' %}"/><br />
+                          <b>نتائج الامتحانات</b>
+                      </a>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;">
+                      <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;"> 
+                        <img src="{% static 'info/images/guids.png' %}"/><br />
+                          <b>لوائح الكليات</b>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <br />
+                <tr>
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;">
+                      <a href="http://localhost:3000/GraduationCertificate" style="text-decoration: none;">
+                        <img src="{% static 'info/images/courses.png' %}" /><br /> 
+                          <b>استخراج شهادة التخرج</b>
+                      </a>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;">
+                      <a href="#" style="text-decoration: none;"> 
                         <br />
+                        <img src="{% static 'info/images/ERP2.png' %}" style="height: 90px; width: 100px;"/><br />
+                          <b>College ERP</b>
+                      </a>
+                      <br />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="col-sm-3" style="text-align:center;">
+                      <a href="file:///E:/Project/Home/StudentActivity.html#" style="text-decoration: none;"> 
+                        <img src="{% static 'info/images/actvites.png' %}"/><br />
+                          <b>الانشطة الطلابية</b>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            -->
+                  </div>
+                </div>
+                <br />
+                <br />
+                <br />
         </section>
       </div>
     </div>
@@ -317,18 +471,19 @@
   <!--Flexy Menu Script-->
   <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
   <!--LayerSlider Script-->
-  <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js' "></script>
-  <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js' "></script>
+  <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+  <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
   <!--Carousel Plugin Script-->
   <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
   <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
-  <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' "></script>
+  <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
   <!-- COLORBOX LIGHTBOX SCRIPT -->
   <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
   <!--Social Share Button Script-->
   <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
   <!-- Fancybox Script -->
-  <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+  <script type="text/javascript"
+    src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
   <!--Tooltip Script-->
   <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
   <!--Placeholder Script-->
@@ -339,12 +494,10 @@
   <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
 
 
-
   <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
 
 
 </body>
-
 <!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
 
 </html>
