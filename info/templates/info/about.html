@@ -27,54 +27,60 @@
     <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
 
     <link rel="stylesheet" href="{% static '/info/homepage/css/2-second-layout-color-5.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}"
+        media="screen" />
 
 </head>
 
-<body >
+<body>
     <style type="text/css">
-    
         body {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 30s ease infinite;
         }
-        
+
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
             }
+
             50% {
                 background-position: 100% 50%;
             }
+
             100% {
                 background-position: 0% 50%;
             }
         }
-             </style>
-    <div class="wrapper" >
+    </style>
+    <div class="wrapper">
         <header class="header-section">
             <div class="logo">
                 <div class="logo-wrapper">
-                    <a href="{% url 'fciscu' %}"> 
-                        <img src="{% static 'info/images/fci-logo.jpg' %}" style="width: 200px; mix-blend-mode: multiply; padding-right: 25px; padding-top: 70px;" /></a>
+                    <a href="{% url 'fciscu' %}">
+                        <img src="{% static 'info/images/fci-logo.jpg' %}"
+                            style="width: 200px; mix-blend-mode: multiply; padding-right: 25px; padding-top: 70px;" /></a>
                 </div>
 
             </div>
 
             <ul class="flexy-menu" style="padding-right: 35px; ">
                 <li id="home" style="text-align: center;">
-                    <a href="{% url 'fciscu' %}"> 
-                        <i class="fa fa-home"></i> Home 
+                    <a href="{% url 'fciscu' %}">
+                        <i class="fa fa-home"></i> Home
                     </a>
                 </li>
-                <li id="contact" style="text-align: center;"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+                <li id="contact" style="text-align: center;"><a href="{% url 'studyatfci' %}"><i
+                            class="fa fa-users"></i> Study At FCI</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="about" style="text-align: center;"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="about" style="text-align: center;"><a href="file:///E:/Project/Home/News&Events.html"><i
+                            class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact" style="text-align: center;"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+                <li id="contact" style="text-align: center;"><a href="{% url 'student_additional_services' %}"><i
+                            class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
                 <li id="contact" style="text-align: center;">
@@ -88,100 +94,124 @@
         </header>
         <!--Logo and Main Menu End-->
 
-<div class="container">
+        <div class="container">
             <!--All Content Start-->
-    <div class="content-wrapper">
-        <div className="main" >
+            <div class="content-wrapper">
+                <div className="main">
                     <br />
-            <h1 style="text-align:center; padding-top: 30px; color:white;"> Why the Faculty of Computers and Informatics at SCU </h1>
+                    <h1 style="text-align:center; padding-top: 30px; color:white;"> Why the Faculty of Computers and
+                        Informatics at SCU </h1>
                     <br />
-        <div className="slideshow">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{% static 'info/images/why.png' %}" className="d-block w-100" alt="slideShow" style="width: 1000px;"/>
+                    <div className="slideshow">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static 'info/images/why.png' %}" className="d-block w-100"
+                                        alt="slideShow" style="width: 1000px;" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <section class="stripe service-panel">
+                    <div id="columns" class="columns_5">
+                        <h4 style="text-align:center;">. The faculty of Computer and Informatics SCU is one of the
+                            leading academic institutions in Suez Canal University and across Egypt <br />. It is one of
+                            the pioneering scientific edifices in the field of computers and informatics studies . The
+                            faculty regularly updates and adjusts the offered academic programs to match needs of the
+                            market place</h4>
+
+                        <br />
+                        <h4 style="text-align:center;">The adjustment is done by introducing new technological and
+                            modern teaching approaches and methods delivered to the students by a league of brilliant
+                            professors carefully chosen by the faculty council. Computers and Informatics SCU takes
+                            pride in being the leader of ACM competitions in Egypt, The Middle East and North Africa
+                            over the last few years</h4>
+
+
+                        <p className="font-weight-light"></p>
+
+                        <br /><br /><br />
+                        <h3 style="text-align: center;"> Historical note </h3><br />
+                        <hr /><br />
+                        <p style="text-align: left;">.The faculty of Computers and Informatics SCU was founded in 1995
+                            according to Supreme Universities Council decree in its session no. (342)<br> It was founded
+                            under the name "the faculty of Information Sciences SCU". That name was later changed to
+                            "the faculty of Computers and Informatics SCU" according to the Supreme Universities Council
+                            decree no. (343). The faculty started welcoming tech-enthusiasts in April 1997, and the
+                            actual academic study started in September 1997 <br>.The faculty witnessed the graduation of
+                            the first generation in 2001</p>
+
+                        <br /> <br />
+                        <h3 style="text-align: center;">Mission</h3><br />
+                        <hr /><br />
+                        <br />
+                        <p style="text-align: left;">The faculty of Computers and Informatics SCU is committed to
+                            graduating individuals of high academic value to satisfy the needs of the marketplace <br />
+                            The faculty also seeks to prepare individuals who are capable of competing under the name of
+                            the faculty while committing to the ethical charter of the field</p>
+                        <p></p>
+
+
+                        <br /> <br />
+                        <h3 style="text-align: center;">Vision</h3><br />
+                        <hr /><br />
+                        <br />
+                        <p className="font-weight-light" style="text-align: left;">.The faculty of Computers and
+                            Informatics SCU aims to be a distinguished academic institution for research and innovation
+                            by offering outstanding technical service for both the national and regional societies</p>
+                        <br />
+                    </div>
+                </section>
             </div>
-        </div>
-    </div>
-
-<section class="stripe service-panel">
-    <div id="columns" class="columns_5">
-        <h4 style="text-align:center;">. The faculty of Computer and Informatics SCU is one of the leading academic institutions in Suez Canal University and across Egypt <br />. It is one of the pioneering scientific edifices in the field of computers and informatics studies . The faculty regularly updates and adjusts the offered academic programs to match needs of the market place</h4>
-
-        <br />
-        <h4 style="text-align:center;">The adjustment is done by introducing new technological and modern teaching approaches and methods delivered to the students by a league of brilliant professors carefully chosen by the faculty council. Computers and Informatics SCU takes pride in being the leader of ACM competitions in Egypt, The Middle East and North Africa over the last few years</h4>
-
-                    
-        <p className="font-weight-light"></p>
-
-        <br /><br /><br />
-        <h3 style="text-align: center;"> Historical note </h3><br />
-        <hr /><br />
-            <p style="text-align: left;">.The faculty of Computers and Informatics SCU was founded in 1995 according to Supreme Universities Council decree in its session no. (342)<br> It was founded under the name "the faculty of Information Sciences SCU". That name was later changed to "the faculty of Computers and Informatics SCU" according to the Supreme Universities Council decree no. (343). The faculty started welcoming tech-enthusiasts in April 1997, and the actual academic study started in September 1997 <br>.The faculty witnessed the graduation of the first generation in 2001</p>
-
-<br /> <br />                  
-    <h3 style="text-align: center;">Mission</h3><br />
-<hr /><br />
-<br />
-<p style="text-align: left;">The faculty of Computers and Informatics SCU is committed to graduating individuals of high academic value to satisfy the needs of the marketplace <br /> The faculty also seeks to prepare individuals who are capable of competing under the name of the faculty while committing to the ethical charter of the field</p>
-        <p></p>
 
 
-<br />   <br />             
-    <h3 style="text-align: center;">Vision</h3><br />
-<hr/><br />
-<br />
-        <p className="font-weight-light" style="text-align: left;">.The faculty of Computers and Informatics SCU aims to be a distinguished academic institution for research and innovation by offering outstanding technical service for both the national and regional societies</p>                                         
-    <br />
-    </div>
-</section>
-    </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <footer class="footer-section">
+                <div class="footer-content">
+                    <div class="footer-top">
+
+                        <h2 style="text-align: center;">Goals</h2>
+                        <br>
+                        <div style="text-align: left;">
+                            <p>.Preparing competent graduates who are capable of satisfying the market needs in the
+                                field of software development and information system </p>
+                            <p>.Developing the potentials of both the academic and administrative staff</p>
+                            <p>.Encouraging the conduct of applied research in collaboration with distinguished cadres
+                                in national and international societies </p>
+                            <p>.Activating the comprehensive quality system in all the faculty's sectors</p>
+                            <p>.Increasing the faculty's role in community service</p>
+                            <p>.Preserving the faculty's infrastructure</p>
+                            <p>.Growing the self-secured resources of the faculty </p>
+                            <p>.Developing the faculty's management system to be ready for digitalization </p>
+                        </div>
+                        <br>
 
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-    <footer class="footer-section">
-        <div class="footer-content">
-            <div class="footer-top">
 
-                <h2 style="text-align: center;">Goals</h2>
-                <br>
-        <div style="text-align: left;">
-          <p>.Preparing competent graduates who are capable of satisfying the market needs in the field of software development and information system </p>
-          <p>.Developing the potentials of both the academic and administrative staff</p>
-          <p>.Encouraging the conduct of applied research in collaboration with distinguished cadres in national and international societies </p>
-          <p>.Activating the comprehensive quality system in all the faculty's sectors</p>
-          <p>.Increasing the faculty's role in community service</p>
-          <p>.Preserving the faculty's infrastructure</p>
-          <p>.Growing the self-secured resources of the faculty </p>
-          <p>.Developing the faculty's management system to be ready for digitalization </p>
-        </div>
-        <br>   
 
-        
-     
-
-        <img className="img-fluid rounded mb-4 mb-lg-0" src="http://portal.suez.edu.eg/fci/sites/default/files/inline-images/goals.png" alt="" 
-        style="
+                        <img className="img-fluid rounded mb-4 mb-lg-0"
+                            src="http://portal.suez.edu.eg/fci/sites/default/files/inline-images/goals.png" alt=""
+                            style="
         width: 600px;
         height:400px; 
         display: block;
@@ -189,56 +219,58 @@
         margin-right: auto; 
         border-radius: 100%;
         box-sizing: border-box;
-        border-bottom: 20px solid transparent;"/> 
-            </div> 
-    
-                       
-        <div class="footer-bottom">
-            <div class="copyright">
-                Copyright © 2021  
-            <a target="_blank" >FCI</a>
-            </div>
+        border-bottom: 20px solid transparent;" />
+                    </div>
+
+
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2021
+                            <a target="_blank">FCI</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a href="#" class="back-to-top"></a>
+            </footer>
+
         </div>
-                       
-    
-        </div>
-            <a href="#" class="back-to-top"></a>
-    </footer>
-                
-            </div>
-        </div>
-    
+    </div>
+
     <div class="clearfix"></div>
-    
-        <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
-        <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
-        <!--Flexy Menu Script-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
-        <!--LayerSlider Script-->
-        <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
-        <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
-        <!--Carousel Plugin Script-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
-        <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
-        <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js"></script>
-        <!-- COLORBOX LIGHTBOX SCRIPT -->
-        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
-        <!--Social Share Button Script-->
-        <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
-        <!-- Fancybox Script -->
-        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
-        <!--Tooltip Script-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
-        <!--Placeholder Script-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
-        <!--model Script-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
-        <!--Custom-->
-        <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
-    
-    
-        <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
-    
-    
-    </body>
-    </html>
+
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js"></script>
+    <!-- COLORBOX LIGHTBOX SCRIPT -->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
+    <!--Social Share Button Script-->
+    <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
+    <!-- Fancybox Script -->
+    <script type="text/javascript"
+        src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
+    <!--Tooltip Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
+    <!--Placeholder Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
+    <!--model Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
+    <!--Custom-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
+
+
+    <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
+
+
+</body>
+
+</html>

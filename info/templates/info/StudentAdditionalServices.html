@@ -142,7 +142,7 @@
                           <td>
                             <div class="col-sm-3" style="text-align:center;">
                               <a href="{% url 'lecture_shedule' %}"> <i class=style="text-decoration: none;">
-                                  <img src="{% static 'info/images/tables.jpg" /><br />
+                                  <img src="{% static 'info/images/tables.jpg' %}" /><br />
                                   <b>جداول الامتحانات</b>
                               </a>
                             </div>
@@ -193,7 +193,9 @@
                               <thead>
                                 <tr>
                                   <th scope="col">
-                                    <h5 style="font-weight:bold ; font-size:20px; text-align: right;">خدمات أخرى</h5>
+                                    <a href="{% url 'studentservices'}">
+                                      <h5 style="font-weight:bold ; font-size:20px; text-align: right;">خدمات أخرى</h5>
+                                    </a>
                                   </th>
                                 </tr>
                               </thead>

@@ -8,8 +8,7 @@
     <title>كلية الحاسبات و المعلومات</title>
     {% load static %}
     <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
-    <meta name="Description"
-        content=" ">
+    <meta name="Description" content=" ">
     <!--Main Element CSS-->
     <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static '/info/homepage/css/form.css' %}" rel="stylesheet" type="text/css">
@@ -27,7 +26,8 @@
     <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
 
     <link rel="stylesheet" href="{% static '/info/homepage/css/2-second-layout-color-5.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static '/info/homepage/css/jquery.simplyscroll.css' %}"
+        media="screen" />
 
 </head>
 <style type="text/css">
@@ -36,37 +36,42 @@
         background-size: 400% 400%;
         animation: gradient 30s ease infinite;
     }
-    
+
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
         }
+
         50% {
             background-position: 100% 50%;
         }
+
         100% {
             background-position: 0% 50%;
         }
     }
-         </style>
+</style>
+
 <body>
-     <!--Top Header Start-->
-     <section class="top-header" style="padding-bottom: 60px;" >
+    <!--Top Header Start-->
+    <section class="top-header" style="padding-bottom: 60px;">
         <div class="wrapper topwrap">
-            
+
             <ul class="flexy-menu" style="padding-left: 275px;">
                 <li id="home" style="float:left;">
                     <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i>Home</a>
                 </li>
                 <li id="number" style="float:left;">
-                    <a href="{% url 'about' %}" ><i class="fa fa-thumbs-o-up"></i> About</a>
+                    <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
                     <div class="menu-space"></div>
 
                 </li>
-                <li id="about" style="float:left;"><a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="about" style="float:left;"><a href="file:///E:/Project/Home/News&Events.html"><i
+                            class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact" style="float:left;"><a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+                <li id="contact" style="float:left;"><a href="{% url 'student_additional_services' %}"><i
+                            class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
                 <li id="contact" style="float:left;">
@@ -77,12 +82,12 @@
         </div>
     </section>
     <!--Top Header End-->
-</header>
+    </header>
 
     <div class="wrapper">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <div class="container">
 
@@ -91,211 +96,216 @@
             </div>
             <!--All Content End-->
             <!--Footer Start-->
-<footer class="footer-section" >
-    <div class="footer-content" style="padding-left: 200px;">
-        <div class="footer-top">
+            <footer class="footer-section">
+                <div class="footer-content" style="padding-left: 200px;">
+                    <div class="footer-top">
 
-            <div className= "Text">
-                <h2 style="text-align:center;"> القبول </h2> 
+                        <div className="Text">
+                            <h2 style="text-align:center;"> القبول </h2>
                             <br />
-                    <h5 style="text-align:center;">تعتبر كلية الحاسبات و المعلومات واحدة من أهم الكليات ذات الاقبال القوي من قبل الطلاب في الوقت الحالي ,<br />
-                        فهي من الكليات الرائدة في دراسة الحاسبات و المعلومات في مصر , حيث تتميز بوجود العديد من التخصصات التكنولوجية الدقيقة بها <br />
-                    </h5> <br />
-                              </div>
-                          <hr/>   
-                          <br />
-                              
-                              
-                    <h4>شروط القبول </h4>
-                          <br />
+                            <h5 style="text-align:center;">تعتبر كلية الحاسبات و المعلومات واحدة من أهم الكليات ذات
+                                الاقبال القوي من قبل الطلاب في الوقت الحالي ,<br />
+                                فهي من الكليات الرائدة في دراسة الحاسبات و المعلومات في مصر , حيث تتميز بوجود العديد من
+                                التخصصات التكنولوجية الدقيقة بها <br />
+                            </h5> <br />
+                        </div>
+                        <hr />
+                        <br />
+
+
+                        <h4>شروط القبول </h4>
+                        <br />
                         <thead>
                             <tr>
-                            <th scope="col">أن يكون الطالب المتقدم للكلية من الطلاب الحاصلين على الثانوية العامة شعبة الرياضيات (علمي رياضة)</th> 
-                            </tr>
-                        </thead>
-                          <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الحصول على الحد الأدنى للقبول بالكلية الذي يحدده مكتب التنسيق كل عام</th> 
-                            </tr>
-                        </tbody>
-                          <br />
-                          <br />
-                          <hr/>     
-                            <br />
-                            
-                          
-                    <h4 className="text-center fw-bolder fs-2 text-start fst-italic" >شهادات الالتحاق </h4>
-                          <br />
-                        <thead>
-                            <tr>
-                            <th scope="col">ثانوية عامة (علمي رياضة)</th> 
-                            </tr>
-                        </thead>
-                          <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الدبلومة الأمريكية</th> 
-                            </tr>
-                        </tbody>
-                          <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الدبلومة البريطانية</th> 
-                            </tr>
-                        </tbody>
-                          <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الشهادات المعادلة</th> 
-                            </tr>
-                        </tbody>
-                          <br />
-                          <br />
-                          <hr/>
-                          
-                          <br />
-                          
-                          
-                    <h4 className="text-center fw-bolder fs-2 fst-italic" >الدرجات العلمية التي تمنحها الكلية </h4> 
-                          <br />       
-                        <thead>
-                            <tr>
-                            <th scope="col">البكالوريوس</th> 
+                                <th scope="col">أن يكون الطالب المتقدم للكلية من الطلاب الحاصلين على الثانوية العامة
+                                    شعبة الرياضيات (علمي رياضة)</th>
                             </tr>
                         </thead>
                         <br />
                         <tbody>
                             <tr>
-                            <th scope="col">الدبلوم</th> 
+                                <th scope="col">الحصول على الحد الأدنى للقبول بالكلية الذي يحدده مكتب التنسيق كل عام
+                                </th>
                             </tr>
                         </tbody>
                         <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الماجستير</th> 
-                            </tr>
-                        </tbody>
                         <br />
-                        <tbody>
-                            <tr>
-                            <th scope="col">الدكتوراه</th> 
-                            </tr>
-                        </tbody>
-                          <br />
-                          <br />
-                          <hr/>
-                          <br />
-                          
-                          
-                    <h4>برامج الدبلوم </h4> 
-                          <br />
+                        <hr />
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 text-start fst-italic">شهادات الالتحاق </h4>
+                        <br />
                         <thead>
                             <tr>
-                                <th scope="col">تمنح الكلية درجة الدبلوم في برنامج نظم تكنولوجيا المعلومات التابع لقسم علوم الحاسب</th> 
-                            </tr>
-                        </thead>
-                          <br />
-                          <br />
-                          <hr/>
-                          
-                          <br />       
-                          
-                    <h4 className="ttext-center fw-bolder fs-2 fst-italic">برامج الدراسات العليا</h4>
-                          <br />
-                        <thead>
-                            <tr>
-                                <th scope="col">N/A</th> 
-                            </tr>
-                        </thead>
-                          <br />
-                          <br />
-                          <hr/>
-                          <br />
-                          
-                          
-                    <h4 className="text-center fw-bolder fs-2 fst-italic" >برامج الماجستير</h4> 
-                          <br />
-                        <thead>
-                            <tr>
-                            <th scope="col">:تمنح الكلية درجة الماجستير في الأقسام التالية</th> 
+                                <th scope="col">ثانوية عامة (علمي رياضة)</th>
                             </tr>
                         </thead>
                         <br />
                         <tbody>
                             <tr>
-                            <th scope="col">علوم الحاسب</th> 
+                                <th scope="col">الدبلومة الأمريكية</th>
                             </tr>
                         </tbody>
                         <br />
                         <tbody>
                             <tr>
-                            <th scope="col">نظم المعلومات</th> 
+                                <th scope="col">الدبلومة البريطانية</th>
                             </tr>
                         </tbody>
-                          <br />
-                          <br >
-                          <hr/>
-                          <br />
-                          
-                          
-                    <h4 className="text-center fw-bolder fs-2 fst-italic" >برامج الدكتوراه</h4> 
-                          <br />
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">الشهادات المعادلة</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <br />
+                        <hr />
+
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 fst-italic">الدرجات العلمية التي تمنحها الكلية </h4>
+                        <br />
                         <thead>
                             <tr>
-                            <th scope="col">:تمنح الكلية درجة الدكتوراه في الأقسام التالية</th> 
+                                <th scope="col">البكالوريوس</th>
                             </tr>
                         </thead>
                         <br />
                         <tbody>
                             <tr>
-                            <th scope="col">علوم الحاسب</th> 
+                                <th scope="col">الدبلوم</th>
                             </tr>
                         </tbody>
                         <br />
                         <tbody>
                             <tr>
-                            <th scope="col">نظم المعلومات</th> 
+                                <th scope="col">الماجستير</th>
                             </tr>
                         </tbody>
-                          <br />
-                          <br />
-                          <hr/>
-                          <br />
-                          
-                          
-                    <h4 className="text-center fw-bolder fs-2 fst-italic" >عدد سنوات الدراسة</h4> 
-                          <br />
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">الدكتوراه</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+
+
+                        <h4>برامج الدبلوم </h4>
+                        <br />
                         <thead>
                             <tr>
-                            <th scope="col">4</th> 
+                                <th scope="col">تمنح الكلية درجة الدبلوم في برنامج نظم تكنولوجيا المعلومات التابع لقسم
+                                    علوم الحاسب</th>
                             </tr>
                         </thead>
-                          <br />
-                          <br />
-                          <hr/>
-                          <br />
-                          
-                          
-                                  <h4 className="text-center fw-bolder fs-2 fst-italic" >سنة التخصص</h4> 
-                          <br />
-                          <thead>
+                        <br />
+                        <br />
+                        <hr />
+
+                        <br />
+
+                        <h4 className="ttext-center fw-bolder fs-2 fst-italic">برامج الدراسات العليا</h4>
+                        <br />
+                        <thead>
                             <tr>
-                            <th scope="col">السنة الدراسية الثالثة</th> 
+                                <th scope="col">N/A</th>
                             </tr>
-                          </thead>
+                        </thead>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 fst-italic">برامج الماجستير</h4>
+                        <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">:تمنح الكلية درجة الماجستير في الأقسام التالية</th>
+                            </tr>
+                        </thead>
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">علوم الحاسب</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">نظم المعلومات</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <br>
+                        <hr />
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 fst-italic">برامج الدكتوراه</h4>
+                        <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">:تمنح الكلية درجة الدكتوراه في الأقسام التالية</th>
+                            </tr>
+                        </thead>
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">علوم الحاسب</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <tbody>
+                            <tr>
+                                <th scope="col">نظم المعلومات</th>
+                            </tr>
+                        </tbody>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 fst-italic">عدد سنوات الدراسة</h4>
+                        <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">4</th>
+                            </tr>
+                        </thead>
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+
+
+                        <h4 className="text-center fw-bolder fs-2 fst-italic">سنة التخصص</h4>
+                        <br />
+                        <thead>
+                            <tr>
+                                <th scope="col">السنة الدراسية الثالثة</th>
+                            </tr>
+                        </thead>
 
 
                     </div>
 
 
 
-<div class="footer-bottom">
-    <div class="copyright">
-                            Copyright © 2021  <a target="_blank" >FCI</a>
-    </div>
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2021 <a target="_blank">FCI</a>
+                        </div>
 
-    </div>
+                    </div>
                     <!--Footer Bottom End-->
 
                 </div>
