@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>كلية الحاسبات و المعلومات</title>
+    {% load static %}
+
+    <link rel="shortcut icon" href="images/fci-logo.ico">
+    <meta name="Description" <!--Main Element CSS-->
+    <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/form.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Flexy Menu CSS-->
+    <link href="{% static '/info/homepage/css/flexy-menu.css' %}" rel="stylesheet" type="text/css">
+    <!--LayerSlider CSS-->
+    <link href="../layerslider/css/layerslider.css' %}" rel="stylesheet" type="text/css">
+    <!--Important Owl CSS-->
+    <link href="{% static '/info/homepage/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <!--Owl DefaultTheme -->
+    <link href="{% static '/info/homepage/css/owl.theme.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/2-second-layout-color-5.css' %}">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.simplyscroll.css' %}" media="screen" />
+
+</head>
+
+<body class="d-block w-100" alt="slideShow">
+    <style type="text/css">
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+
+    <!--Top Header Start-->
+    <section class="top-header">
+        <div class="wrapper topwrap">
+
+
+        </div>
+    </section>
+    <!--Top Header End-->
+
+    <div class="wrapper">
+        <header class="header-section">
+            <div class="logo">
+                <div class="logo-wrapper">
+                    <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}" /></a>
+                </div>
+            </div>
+
+            <ul class="flexy-menu">
+                <li id="home">
+                    <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home</a>
+
+                </li>
+
+                <li id="number">
+                    <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+                    <div class="menu-space"></div>
+
+                </li>
+                <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="about"><a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact"> <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student
+                        Services</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
+                    <div class="menu-space"></div>
+                </li>
+                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
+                    <div class="menu-space"></div>
+                </li>
+            </ul>
+
+        </header>
+        <br />
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="stripe service-panel">
+                    <nav className="navbar navbar-light bg-light">
+                        <div className="container-fluid">
+                            <h2>النشاط الفني</h2>
+                        </div>
+                    </nav>
+                    <br />
+
+
+                    <h3>الفنون التشكيلية</h3>
+                    <p>التصوير الزيتي و الرسم</p>
+                    <p>الرسم بالرصاص</p>
+                    <p>النحت و الخزف</p>
+                    <p>التصميم - اعلان - زخرفة - خط عربي</p>
+                    <p>الأشغال الفنية - أشغال جلود - معادن - أشغال النجارة - تصوير ضوئي </p>
+
+                    <br />
+                    <h3>شروط التسابق</h3>
+                    <p>أن تكون الأعمال المقدمة من انتاج الطالب</p>
+                    <p>تقدم كل عدد 25 عملا فنيا</p>
+                    <p>يخصص لكل جامعة مساحة داخل المعرض تقوم بتنسيق الأعمال بها</p>
+                    <p>يشارك عدد 2 طالب أو طالبة + مشرف بالمعرض</p>
+
+                    <br />
+                    <h3>الفنون الشعبية</h3>
+                    <p>تقديم عدد ثلاثة أعمال من ابداعات البيئة الشعبية</th>
+                    <p>مدة العرض لا تزيد عن 30 دقيقة</th>
+                    <p>الاستعانة بالموسيقى المسجلة</th>
+                    <p>تشارك الجامعة بعدد 15 طالب و طالبة + مشرف</th>
+
+                        <br />
+                    <h3>الموسيقى و الكورال</h3>
+                    <p>عزف فردي</p>
+                    <p>الغناء الفردي و الجماعي</p>
+                    <p>يتكون الفريق من 15 طالب و طالبة + مشرف</p>
+                    <p>الزمن المحدد للتسابق 45 دقيقة</p>
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2019 <a target="_blank">FCI</a>
+                        </div>
+
+                    </div>
+
+            </div>
+
+
+            <!--Go To Top-->
+            <a href="#" class="back-to-top"></a>
+            <!--End-->
+
+            </footer>
+            <!--Footer End-->
+
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js' "></script>
+    <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js' "></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' "></script>
+    <!-- COLORBOX LIGHTBOX SCRIPT -->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
+    <!--Social Share Button Script-->
+    <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
+    <!-- Fancybox Script -->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+    <!--Tooltip Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
+    <!--Placeholder Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
+    <!--model Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
+    <!--Custom-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
+
+
+
+    <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
+
+
+</body>
+
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+
+</html>

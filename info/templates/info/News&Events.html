@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>كلية الحاسبات و المعلومات</title>
+    {% load static %}
+    <link rel="shortcut icon" href="images/fci-logo.ico">
+    <meta name="Description" <!--Main Element CSS-->
+    <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/form.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/info/homepage/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Flexy Menu CSS-->
+    <link href="{% static '/info/homepage/css/flexy-menu.css' %}" rel="stylesheet" type="text/css">
+    <!--LayerSlider CSS-->
+    <link href="../layerslider/css/layerslider.css' %}" rel="stylesheet" type="text/css">
+    <!--Important Owl CSS-->
+    <link href="{% static '/info/homepage/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <!--Owl DefaultTheme -->
+    <link href="{% static '/info/homepage/css/owl.theme.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/2-second-layout-color-5.css' %}">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.simplyscroll.css' %}" media="screen" />
+
+</head>
+
+<body class="d-block w-100" alt="slideShow">
+    <style type="text/css">
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    <!--Top Header Start-->
+    <section class="top-header">
+
+        <div class="wrapper topwrap">
+
+
+        </div>
+    </section>
+    <!--Top Header End-->
+
+    <div class="wrapper">
+        <header class="header-section">
+            <div class="logo">
+                <div class="logo-wrapper">
+                    <a href="#">
+                        <img src="{% static 'info/images/fci-logo.jpg' %}" />
+                    </a>
+                </div>
+
+            </div>
+
+            <ul class="flexy-menu">
+                <li id="home">
+                    <a href="{% url 'fciscu' %}">
+                        <i class="fa fa-home">
+                        </i> Home
+                    </a>
+                </li>
+                <li id="number">
+                    <a href="{% url 'about' %}">
+                        <i class="fa fa-thumbs-o-up">
+                        </i> About
+                    </a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact">
+                    <a href="{% url 'studyatfci' %}">
+                        <i class="fa fa-users">
+                        </i> Study At FCI
+                    </a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="about">
+                    <a href="{% url 'studentservices' %}">
+                        <i class="fa fa-lightbulb-o">
+                        </i> Student Services
+                    </a>
+                    <div class="menu-space"></div>
+                </li>
+                <li id="contact">
+                    <a href="#">
+                        <i class="fa fa-envelope-o">
+                        </i> Log in
+                    </a>
+                    <div class="menu-space"></div>
+                </li>
+                <li>
+                    <a id="openD" href="javascript:void(0)">
+                        <i class="fa fa-key">
+                        </i> Register
+                    </a>
+                    <div class="menu-space"></div>
+                </li>
+            </ul>
+
+        </header>
+
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="stripe service-panel">
+                    <div className="row align-items-center my-5">
+                        <div className="col-lg-7">
+                            <h1 style="text-align:left;">News</h1>
+                            <br />
+                            <hr />
+                            <br />
+                            <h4 style="text-align:left;">Computer and Information Conference of Suez Canal University
+                                recommends activating technology</h4>
+                            <br />
+                            <img className="img-fluid rounded mb-4 mb-lg-0" src="{% static 'info/images/News.jpg" alt=""
+                                class="center" style="max-width: 100%;" />
+                            <br />
+                            <br />
+                            <p style="text-align:center;">The first international scientific conference entitled
+                                "Advanced Computer Communications and Informatics", which was held on Saturday and
+                                Sunday at the Faculty of Computers and Information, Suez Canal University, under the
+                                patronage of Dr. Mamdouh Ghorab, President of the University, recommended activating the
+                                role of information technology in developing the economic zone in the Suez Canal axis
+                            </p>
+                            <br />
+                            <br />
+                            <p style="text-align:center;">The conference, over the course of two days, honored a number
+                                of research participants, experts and university professors, and the opening of the
+                                conference dealt with several speeches by the conference organizers, and Dr. Abdel Raouf
+                                Abdel-Rahman Mustafa, Dean of the Faculty of Computers and Information, stated that the
+                                college's first international scientific conference represents a unique move in the
+                                field of computers and information technology</p>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div className="row align-items-center my-5">
+                        <div className="col-lg-7">
+                            <h1 style="text-align:left;">News 2</h1>
+                            <br />
+                            <br />
+                            <img className="img-fluid rounded mb-4 mb-lg-0"
+                                src="{% static 'info/images/postgrad.png' %}" alt="" class="center"
+                                style="max-width: 100%;" />
+                        </div>
+                        <div className="col-lg-5">
+                            <br />
+                            <p style="text-align:center;">
+                                Faculty of Computer and Informatics is working on graduating distinguished human cadres
+                                capable of competing in the labor market under a system of quality education and applied
+                                scientific research directed at community service while keeping pace with technological
+                                development within a framework of values and ethics.
+                            </p>
+                        </div>
+
+                        <div className="row align-items-center my-5">
+                            <div className="col-lg-7">
+                                <br />
+                                <br />
+                                <h1 style="text-align:left;">Events</h1>
+                                <br />
+                                <hr />
+                                <br />
+                            </div>
+                            <div className="col-lg-5">
+                                <br />
+                                <h2 style="text-align:left;">Got Talent competition 2021</h2>
+                                <p className="font-weight-light">
+                                    <br />
+                                <table style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Organizers</th>
+                                            <th scope="col">Arbitrator</th>
+                                            <th scope="col">Timing</th>
+                                            <th scope="col">Day</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>i / Karim El Hawary <br /> i / Isra Khaled Mohamed</td>
+                                            <td>Prof. Dr. Jamal Zaher</td>
+                                            <td>6 pm</td>
+                                            <td>Sunday<br />1/31/2021</td>
+                                            <td>Poetry Competition</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>Dr. Ayoub Al-Otaibi<br /> Mr. Shahd Ayman Al-Sayed</td>
+                                            <td>Dr. Ahmed Abdel Wahab</td>
+                                            <td>6 pm</td>
+                                            <td>Sunday<br />1/31/2021</td>
+                                            <td>Playing Competition</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>i / Mohamed Ibrahim Mubarak</td>
+                                            <td>Dr. Basma Mahmoud Ibrahim</td>
+                                            <td>6 pm</td>
+                                            <td>Sunday<br />1/31/2021</td>
+                                            <td>Singing competition</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                                </p>
+                                <br />
+                                <img className="img-fluid rounded mb-4 mb-lg-0"
+                                    src="http://suez.edu.eg/ar/wp-content/uploads/2021/01/145186600_1099518623812621_6313385801373469427_n-895x430.jpg"
+                                    alt="" class="center" style="max-width: 100%;" />
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+            </div>
+            </section>
+        </div>
+        <!--All Content End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+            <footer class="footer-section">
+
+                <div class="footer-content">
+                    <div class="footer-top">
+
+                        
+                       
+                        
+                        
+                        <section class="footer-contact">
+                            <h2 class="footer-title">اتصل بنا</h2>
+                            <div class="footer-details">
+                                <ul>
+                                    <li>
+                                        <div class="contact-list">
+                                            <i class="fa"><img src="images/footer-icon-address.png' %}" /></i>
+                                            <span> ادارة الشناوى:<br>55 شارع صفية زغلول - محطة الرمل </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-list email">
+                                            <i class="fa"><img src="images/footer-icon-email.png' %}" /></i>
+                                            <span>البريد الالكترونى:<br> info@elshennawy.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-list phone">
+                                            <i class="fa"><img src="images/footer-icon-phone.png' %}" /></i>
+                                            <span>الهاتف: <br> 034849346 - 034849345 - 034844885</span>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+
+                    </div>
+
+                    
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2019  <a target="_blank" >FCI</a>
+                        </div>
+
+                    </div>
+                    Footer Bottom End-->
+
+    </div>
+
+
+    <!--Go To Top-->
+    <a href="#" class="back-to-top"></a>
+    <!--End-->
+
+    </footer>
+    <!--Footer End-->
+
+    </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js' "></script>
+    <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js' "></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' "></script>
+    <!-- COLORBOX LIGHTBOX SCRIPT -->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
+    <!--Social Share Button Script-->
+    <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
+    <!-- Fancybox Script -->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+    <!--Tooltip Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
+    <!--Placeholder Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
+    <!--model Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
+    <!--Custom-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
+
+
+
+    <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
+
+
+</body>
+
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+
+</html>

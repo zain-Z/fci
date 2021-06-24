@@ -27,6 +27,66 @@ def studentservices(request):
 
 
 @login_required
+def activity_sport(request):
+    if request.user.is_student:
+        return render(request, 'info/ActivitySport.html')
+
+
+@login_required
+def cultural_activity(request):
+    if request.user.is_student:
+        return render(request, 'info/CulturalActivity.html')
+
+
+@login_required
+def exam_result(request):
+    if request.user.is_student:
+        return render(request, 'info/ExamResult.html')
+
+
+@login_required
+def grade_four_is_exam_result(request):
+    if request.user.is_student:
+        return render(request, 'info/GradeFourISExamResult.html')
+
+
+@login_required
+def grade_four_is_exam_schedule(request):
+    if request.user.is_student:
+        return render(request, 'info/GradeFourISExamSchedule.html')
+
+
+@login_required
+def lecture_shedule(request):
+    if request.user.is_student:
+        return render(request, 'info/LectureShedule.html')
+
+
+@login_required
+def news_and_events(request):
+    if request.user.is_student:
+        return render(request, 'info/News&Events.html')
+
+
+@login_required
+def student_additional_services(request):
+    if request.user.is_student:
+        return render(request, 'info/StudentAdditionalServices.html')
+
+
+@login_required
+def vision_and_mission(request):
+    if request.user.is_student:
+        return render(request, 'info/VisionAndMission.html')
+
+
+@login_required
+def artistic_activity(request):
+    if request.user.is_student:
+        return render(request, 'info/ArtisticActivity.html')
+
+
+@login_required
 def about(request):
     if request.user.is_student:
         return render(request, 'info/about.html')

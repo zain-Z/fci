@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>كلية الحاسبات و المعلومات</title>
+  {% load static %}
+
+  <link rel="shortcut icon" href="images/fci-logo.ico">
+  <meta name="Description" <!--Main Element CSS-->
+  <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static '/info/homepage/css/form.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static '/info/homepage/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+  <!--Flexy Menu CSS-->
+  <link href="{% static '/info/homepage/css/flexy-menu.css' %}" rel="stylesheet" type="text/css">
+  <!--LayerSlider CSS-->
+  <link href="../layerslider/css/layerslider.css' %}" rel="stylesheet" type="text/css">
+  <!--Important Owl CSS-->
+  <link href="{% static '/info/homepage/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+  <!--Owl DefaultTheme -->
+  <link href="{% static '/info/homepage/css/owl.theme.css' %}" rel="stylesheet" type="text/css">
+
+  <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/2-second-layout-color-5.css' %}">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.simplyscroll.css' %}" media="screen" />
+
+</head>
+
+<body class="d-block w-100" alt="slideShow">
+  <style type="text/css">
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 30s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+  <!--Top Header Start-->
+  <section class="top-header">
+    <div class="wrapper topwrap">
+
+
+    </div>
+  </section>
+  <!--Top Header End-->
+
+  <div class="wrapper">
+    <header class="header-section">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}" /></a>
+        </div>
+      </div>
+
+      <ul class="flexy-menu">
+        <li id="home">
+          <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home</a>
+
+        </li>
+
+        <li id="number">
+          <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+          <div class="menu-space"></div>
+
+        </li>
+        <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+          <div class="menu-space"></div>
+        </li>
+        <li id="about"><a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+          <div class="menu-space"></div>
+        </li>
+        <li id="contact"> <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student Services</a>
+          <div class="menu-space"></div>
+        </li>
+        <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
+          <div class="menu-space"></div>
+        </li>
+        <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
+          <div class="menu-space"></div>
+        </li>
+      </ul>
+
+    </header>
+    <br />
+    <div class="container">
+      <div class="content-wrapper">
+        <br />
+        <br />
+        <br />
+
+        <section class="stripe service-panel">
+          <h1 style="text-align: center; color:gray">اللائحة الداخلية</h1>
+          <br />
+          <h4 style="text-align: center; color: black;">لمرحلة البكالوريوس</h4>
+
+
+          <br />
+          <table class="table table-bordered border border-dark" style="width:100%;">
+
+            <br />
+            <h3 style="color: #121a91;">رؤية الكلية</h3>
+            <p>
+              تسعى كلية الحاسبات والمعلومات بجامعة قناة السويس لتحقيق التميز والابتكار في مجالات التعليم والبحث العلمى
+              وخدمة المجتمع على المستوى المحلي والاقليمي
+            </p>
+
+            <br />
+            <h3 style="color: #121a91;">رسالة الكلية</h3>
+            <p>تتمثل رسالة كلية الحاسبات و المعلومات في :</p>
+            <ul>
+
+              <li> إمداد الطالب بإصول المعرفة والبحث العلم فى مجالات علوم الحاسب ونظم وتكنولوجيا المعلومات وتنمية شخصية
+                الطالب لجعله راغبا في الابتكار ومحبا للعمل الماعى و قادرا عل المنافسة المحلية والإقليمية والعالمية
+              </li>
+
+              <br />
+              <li> تطوير المناهج الدراسية وتحديثها بصورة مسستمرة بما يتماشى مع التقدم العلمى ومتطلبات العصر واحتياجات
+                سوق العمل </li>
+
+              <br />
+              <li>تنمية الوعى بقيمة التعليم المستمر وحتمية التعلم الذاتى وأهمية استخدام الأساليب الحديثة فى هذا المجال
+              </li>
+
+
+              <br />
+              <li>استخدام البحث العلمي كوسيلة لتحقيق الابتكار في مجالات الكلية عن طريق دراسة الأهمية الاقتصادية
+                والتجارية
+                والاجتماعية لمردود البحث العلمي
+              </li>
+
+              <br />
+              <li>تقديم خدمة مجتمعية متميزة في مجالات الكلية </li>
+
+              <br />
+              <li>تعزيز مبادئ المصداقية و الأخلاقيات</li>
+            </ul>
+
+            <br />
+            <h3 style="color: #121a91;"> مادة (1) أهداف الكلية</h3>
+            <p>تسعى الكلية الى تحقيق الاهداف الاتية :</p>
+
+            <br />
+            <p>
+              اعداد المتخصصين فى الحاسبات والمعلومات المؤهلين بالأسس النظرية ومنهجيات التطبيق بما يؤهلهم للمنافسة
+              العالمية فى
+              التطوير الدائم والمستمر للبرمجيات ونظم وتكنولوجيا المعلومات
+            </p>
+
+            <br />
+            <ul className="ltr">
+
+              <li>اجراء الدراسات والبحوث العلمية والتطبيقية فى مجال الحاسبات والمعلومات وفى مقدمتها تلك التى لها أثر
+                مباشر
+                على التنمية المتكاملة فى المجتمع*
+                وانشاء وحدات ابحاث متخصصة فى الفروع المختلفة للحاسبات والمعلومات
+              </li>
+
+              <br />
+              <li>
+                تقديم الاستشارات والمساعدات العلمية والفنية للهيئات والجهات التى تستخدم تكنولوجيا الحاسبات والمعلومات
+                وتهتم بصناعة واتخاذ القرار ودعمه*
+              </li>
+
+              <br />
+              <li>
+                تدريب الكوادر الفنية فى قطاعات الدولة المختلفة على تكنولوجيا الحاسبات والمعلومات *
+              </li>
+
+              <br />
+              <li>
+                نشر الوعي وتعميقه فى المجتمع بهدف استخدام تكنولوجيا الحاسبات والمعلومات فى قطاعات ومؤسسات الدولة
+                المختلفة ، ورفع كفاءة استخدامها
+              </li>
+
+              <br />
+              <li>
+                تنظيم المؤتمرات وعقد الاجتماعات العلمية بهدف الارتقاء بالمستوي التعليمي وتعميق المفهوم العلمي بين
+                الكوادر
+                المتخصصة
+              </li>
+
+              <br />
+              <li>
+                عقد الاتفاقيات العلمية مع الهيئات والمؤسسات المناظرة على المستوي المحلي والإقليمي والعالمي بهدف تبادل
+                الآراء
+                وإجراء البحوث المتعلقة بتخصصات الحاسبات والمعلومات
+              </li>
+
+              <br />
+              <li>
+                توفير وتدعيم وسائل النشر والبحث العلمي في شتى مجالات التخصص
+              </li>
+
+              <br />
+              <li>
+                انشاء وحدات متخصصه متقدمه فى الفروع المختلفه لعلوم الحاسبات والمعلومات
+              </li>
+
+              <br />
+              <li>
+                الاشتراك مع الجهات المتخصصة لتطوير وتعريب برمجيات النظم والتطبيقات المختلفة
+              </li>
+            </ul>
+
+            <br />
+            <h3 style="color: #121a91;"> مادة (2) أقسام الكلية</h3>
+            <p>تضم كلية الحاسبات و المعلومات الاقسام التالية :</p>
+
+            <ol>
+              <li>قسم علوم الحاسب</li>
+              <p> و يشرف على برنامج علوم الحاسب </p>
+
+              <br />
+              <li>قسم نظم المعلومات</li>
+              <p>و يشرف على برنامج نظم المعلومات</p>
+              </ul>
+
+              <br />
+              <h3 style="color: #121a91;">قسم علوم الحاسب</h3>
+              <p>
+                و يتضمن المجالات العلمية التالية : برمجة الحاسبات و مفاهيم لغات الحاسب و مترجماتها - هياكل البيانات -
+                هندسة البرمجيات - النظم الخبيرة - نظم قواعد المعرفة
+              </p>
+
+              <br />
+              <h3 style="color: #121a91;"> قسم نظم المعلومات</h3>
+              <p>
+                - و يتضمن المجالات العلمية التالية : تحليل و تصميم نظم المعلومات - نظم قواعد البيانات - قواعد البيانات
+                الشيئية - نظم تخزين و استرجاع البيانات
+                التنقيب في البيانات - مستودعات البيانات
+              </p>
+
+
+              <br />
+              <br />
+              <h4 style="color: #121a91;"> ملحق (1) المحتوى العلمي للمقررات</h4>
+              <br />
+              <table>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">English Language I</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">The material reflects the stylistic variety that advanced
+                      earners have to be able to
+                      deal with. The course gives practice in specific points of grammar to consolidate and
+                      extend learners existing knowledge. Analysis of syntax; comprehension; skimming
+                      and scanning exercises develop the learner’s skills, comprehension questions
+                      interpretation and implication. The activities aim to develop listening, speaking and
+                      writing skills through a communicative, functional approach, with suggested topics
+                      for discussion and exercises in summary writing and composition
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">English Language II</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">The course aims at enabling the students to further polish
+                      and develop their skills in
+                      English language through various interactive activities. The need for more articulate
+                      written English is reinforced through further in depth study of applied grammar.
+                      Again a conversational and situational dialogue based contents are presented to
+                      attract students’ interest. Pronunciations and comparatively complex grammar are
+                      simultaneously introduced. Field related terminology and longer conversations are
+                      also presented with emphasis on contrastive grammar and a more articulate
+                      pronunciation
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Probability and Statistics</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+
+                    <td colspan="7" style="text-align: left;">Introduction to probability: Basic concepts; Properties of
+                      probability; Conditional
+                      probability and independence; Total probability and Bayes’ rule; Random variables;
+                      Probability distributions.
+                      Introduction to statistical analysis: Sampling and sampling distributions; Point
+                      estimation; Methods of moments and maximum likelihood; Interval estimation;
+                      Least squared concept; Testing hypotheses; Statistical tests.
+                      Applications: Statistical software packages; Applications of statistics to reliability
+                      engineering
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Mathematics I</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Pre-calculus review: sets and functions; limits and
+                      continuity − Derivatives:
+                      techniques of differentiation; derivatives of the basic and fundamental functions;
+                      implicit differentiation; linear approximation and differentials; extreme of functions;
+                      optimization problems; velocity and acceleration − Integrals: indefinite integrals;
+                      change of variables; definite integrals; the fundamental theorem of calculus −
+                      Techniques of integration: integration by parts; trigonometric integrals and
+                      substitutions; integrals of rational functions − Numerical integration − Applications
+                      of definite integrals
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Mathematics II</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Partial fractions − Infinite series: sequences, convergent
+                      and divergent series,
+                      positive-term series, tests of convergence, alternating series and absolute
+                      convergence, power series, power series representations of functions, Maclauran
+                      and Taylor series − Differential equations: definition, classifications and
+                      terminology, techniques of solution of ordinary first–order linear differential
+                      equations – Matrices − Linear equations − Vector spaces, inner product spaces −
+                      Linear transformations − Eigen-values and eigenvectors
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Mathematics III</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Laplace transform − Inverse Transform − Fourier series −
+                      complex Fourier series −
+                      Fourier integrals − Fourier cosine and sine transforms − Fourier transform –
+                      Discrete and fast Fourier transforms − Z-transform − Inverse Z-transform −
+                      Discrete-time systems and difference equations − Discrete linear systems − Wavelet
+                      transform − Applications
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Physics I</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Mechanics: Physics and measurements; Motion in one
+                      dimension; Vectors; Motion
+                      in two dimensions; Laws of motion; Circular motion and its applications; Work and
+                      energy; Potential energy and conservation of energy; Linear momentum and
+                      collision; Rotation of a rigid body; Rolling motion; Law of gravity.
+                      Waves: Oscillatory motion; Wave motion; Sound waves.
+                      Physical optics: Interference, diffraction and polarization.
+                      Magnetic fields: Definitions and properties; Sources of magnetic fields;
+                      electromagnetic waves; The four Maxwell’s equations.
+                      Selected topics: Introduction to modern physics and applications, Molecules and
+                      solids; Semiconductors and semiconductors devices; Superconductivity
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Programming Fundamentals</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Fundamental programming constructs: Syntax and semantics
+                      of a higher-level
+                      language; variables, types, expressions, and assignment − Simple I/O −
+                      Conditional and iterative control structures − Functions and parameter passing −
+                      Structured decomposition − Algorithms and problem-solving: Problem-solving
+                      strategies; the role of algorithms in the problem-solving process; implementation
+                      strategies for algorithms; debugging strategies; the concept and properties of
+                      algorithms − Fundamental data structures − Machine level representation of data −
+                      Human-computer interaction: Introduction to design issues − Software
+                      development methodology: Fundamental design concepts and principles;
+                      structured design; testing and debugging strategies; test-case design;
+                      programming environments; testing and debugging tools
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Data Structures and Algorithms</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Review of elementary programming concepts − Fundamental
+                      data structures:
+                      Stacks; queues; linked lists; hash tables; trees; graphs − Basic algorithmic analysis:
+                      big "O" , little "o" , omega, and theta notation − Fundamental computing
+                      <br />
+                      algorithms: O(N log N) sorting algorithms; hash tables, including collisionavoidance strategies;
+                      binary search trees; representations of graphs; depth- and
+                      breadth-first traversals − Recursion and divide-and-conquer strategies − Basic
+                      <br />
+                      algorithmic strategies: Brute-force algorithms; greedy algorithms; divide and
+                      conquer; backtracking − Standard complexity classes
+
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Object-Oriented Programming</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Introduction to object-oriented programming − Using an
+                      object-oriented language;
+                      classes and objects; syntax of class definitions; methods; members − Simple data:
+                      variables, types, and expressions; assignment − Control structures: Iteration;
+                      conditionals − Message passing: Simple methods; parameter passing – Subclassing; encapsulation and
+                      information hiding; separation of behavior and
+                      implementation; class hierarchies; inheritance; polymorphism − Collection classes
+                      and iteration protocols − Using APIs: Class libraries; packages for graphics and
+                      GUI applications − Object-oriented design: Fundamental design concepts and
+                      principles; introduction to design patterns; object-oriented analysis and design;
+                      design for reuse
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Software Engineering</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th colspan="6">Foundations of Information Systems</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Information systems components. Information systems in
+                      organizations:
+                      Characteristics of IS professionals, IS career paths, Cost/value information, Quality
+                      of information, competitive advantage of information, IS and organizational
+                      strategy, Value chains and networks. Globalization. Valuing information systems:
+                      Investment evaluation, Multi-criteria analysis, Cost-benefit analysis, Identifying
+                      and implementing innovations. E-business: B-to-C, B-to-B, Intranets, Internet,
+                      extranets, E-government, Web 2.0 Technologies: e.g., wikis, tags, blogs, netcasts,
+                      self-publishing, New forms of collaboration: social networking, virtual teams, viral
+                      marketing crowd-sourcing. Security of information systems: Threats to information
+                      systems, Technology-based safeguards. Business intelligence: Organizational
+                      decision making, functions, and levels, Executive, managerial, and operational
+                      levels, Systems to support organizational functions and decision making.
+                      Information and knowledge discovery: Reporting systems, Online analytical
+                      processing, Data, text, and Web mining, Business analytics. Application systems:
+                      Executive, managerial, and operational support systems, Decision support systems
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Databases</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th colspan="6">Systems Analysis and Design </th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th colspan="6">Fundamentals I</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th colspan="6">Geographical Information Systems</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Fundamentals of Geographic Information Systems concepts to
+                      create, edit, and
+                      query spatial data. An introduction to map projections, coordinate systems, data
+                      capture, attribute tables, data manipulation, remote sensing, aerial and satellite
+                      imagery and using Global Position Systems (GPS). Transferring data to GIS data
+                      models. Spatial relationships analysis and making decisions from presented
+                      information through various geo-processing techniques. Using GIS in many fields.
+                      Hands-on experience in GIS techniques using appropriate tools
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Decision Support Systems</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Basic concepts of DSS and their architectures and
+                      different components.
+                      Characteristics, structures, and uses of DSS in different fields. DSS models.
+                      Institutional and ad hoc DSS. DSS operating and evolving. Application of decision
+                      support systems in different disciplines. Hardware and software selections of DSS
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Advanced Database</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Data and database administration: Transaction processing;
+                      Using a database
+                      management system from an application development environment; Use of
+                      database management systems in an enterprise system context; Data / information
+                      architecture; Data security management. Basic data security principles. Data
+                      security implementation: Data quality management. Data quality audits. Data
+                      quality improvement: Business intelligence. On-line analytic processing. Data
+                      warehousing
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Distributed and Object Databases</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Levels of distribution transparency. Distributed database
+                      design, mapping users’
+                      transactions to distributed level. Optimization of accesses strategies. The
+                      management of distributed transactions. Distributed concurrence control, recovery
+                      in distributed database. Distributed database administration. Commercial systems.
+                      The SDD 1 system. Object-databases
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Database Administration</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Different DBA job roles (VP of DBA, developer DBA,
+                      production DBA). The
+                      changing job role of the DBA. Environment management (network, CPU, disk and
+                      RAM). Instance management (managing SGA regions). DBMS table and index
+                      management. Instance Architecture. The three security methods (VPD, Grant
+                      security/role-based security, grant execute). Creating New Database Users.
+                      Auditing User activity. Identifying System and Object Privileges. Granting and
+                      Revoking Privileges. Creating and Modifying Roles. Displaying user security
+                      Information from the Data Dictionary. Object management. Database maintenance
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">Multimedia Databases</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Types of multimedia information; multimedia database
+                      applications; characteristics
+                      of multimedia objects; components of a multimedia database management system;
+                      Multimedia storage and retrieval; Multimedia object storage; file retrieval
+                      structures; disk scheduling and server admission; Multimedia information
+                      modeling; Metadata for multimedia; multimedia data access; Object-oriented
+                      models temporal models, spatial models and multimedia authoring; Querying
+                      multimedia databases; Query processing and query languages; multimedia
+                      database architecture
+
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr>
+                    <th colspan="6">E-commerce</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="7" style="text-align: left;">Electronic commerce economics, business models, value
+                      chain analysis, technology
+                      architectures for electronic business, supply chain management, consumer behavior
+                      within electronic environments, legal and ethical issues, information privacy and
+                      security, transborder data flows, information accuracy and error handling, disaster
+                      planning and recovery, solution planning, implementation and rollout, site design,
+                      Internet standards and methods, design of solutions for the Internet, intranets, and
+                      extranets, EDI, payment systems, support for inbound and outbound logistics
+                    </td>
+                    <th scope="row">Contents</th>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              <br />
+              <br />
+              <h3 style="text-align: right ; color: #121a91;">المراجع</h3>
+              <ul>
+                <li style="text-align: left;">
+                  <b>Computing Curricula 2005,</b>The Association for Computing
+                  Machinery (ACM), The Association for Information Systems (AIS)
+                  The Computer Society (IEEE-CS)
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>Computing Curricula 2001 - Computer Science,</b> IEEE Computer
+                  Society and Association for Computing Machinery (ACM)
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>Computer Science Curriculum 2008: An Interim Revision of CS
+                    2001,</b> Association for Computing Machinery (ACM) and IEE Computer Society
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>IS 2002: Model Curriculum and Guidelines for Undergraduate
+                    Degree Programs in Information Systems,</b> Association for
+                  Computing Machinery (ACM), Association for Information Systems
+                  (AIS) and Association of Information Technology Professionals (AITP)
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>IS 2010: Curriculum Guidelines for Undergraduate Degree
+                    Programs in Information Systems,</b> Association for Computing
+                  Machinery (ACM) and Association for Information Systems (AIS).
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>Information Technology 2008: Curriculum Guidelines for
+                    Undergraduate Degree Programs in Information Technology,</b>
+                  Association for Computing Machinery (ACM) and IEEE Computer
+                  Society.
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>Software Engineering 2004: Curriculum Guidelines for
+                    Undergraduate Degree Programs in Software Engineering,</b> IEEE
+                  Computer Society and Association for Computing Machinery (ACM).
+                </li>
+
+                <br />
+                <li style="text-align: left;">
+                  <b>Computer Engineering 2004: Curriculum Guidelines for
+                    Undergraduate Degree Programs in Computer Engineering,</b> IEEE
+                  Computer Society and Association for Computing Machinery (ACM).
+                </li>
+              </ul>
+
+          </table>
+
+          <br />
+          <hr />
+
+          <div class="footer-bottom">
+            <div class="copyright">
+              Copyright © 2019 <a target="_blank">FCI</a>
+            </div>
+
+          </div>
+
+      </div>
+
+
+      <!--Go To Top-->
+      <a href="#" class="back-to-top"></a>
+      <!--End-->
+
+      </footer>
+      <!--Footer End-->
+
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+
+
+  <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+  <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
+  <!--Flexy Menu Script-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
+  <!--LayerSlider Script-->
+  <script type="text/javascript" src="../layerslider/js/layerslider.kreaturamedia.jquery.js' "></script>
+  <script type="text/javascript" src="../layerslider/js/layerslider.transitions.js' "></script>
+  <!--Carousel Plugin Script-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
+  <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+  <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' "></script>
+  <!-- COLORBOX LIGHTBOX SCRIPT -->
+  <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
+  <!--Social Share Button Script-->
+  <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
+  <!-- Fancybox Script -->
+  <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5"></script>
+  <!--Tooltip Script-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
+  <!--Placeholder Script-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/placeholder.js' %}"></script>
+  <!--model Script-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/jquery.modal.min.js' %}"></script>
+  <!--Custom-->
+  <script type="text/javascript" src="{% static '/info/homepage/js/custom.js' %}"></script>
+
+
+
+  <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
+
+
+</body>
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+
+</html>

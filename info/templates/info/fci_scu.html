@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width" />
     <title>كليةالحاسبات و المعلومات</title>
     {% load static %}
-    
+
     <link rel="shortcut icon" href="{% static 'info/images/fci-logo.jpg' %}">
-    <meta name="Description"
-        content="">
+    <meta name="Description" content="">
     <!--Main Element CSS-->
     <link href="{% static '/info/homepage/css/style.css' %}" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet" type="text/css">
@@ -28,231 +27,249 @@
     <link href="{% static '/info/homepage/css/slideshow.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="css/2-second-layout-color-5.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.simplyscroll.css" media="screen" />
-    
+
 
 </head>
 
-<body class="d-block w-100" alt="slideShow" >
+<body class="d-block w-100" alt="slideShow">
     <style type="text/css">
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+        }
 
-body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
-}
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-     </style>
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
     <br />
     <br />
-            </div>
-            <h1 style="text-align:center; color:white;">WElCOME TO THE FACULTY OF COMPUTERS AND INFORMATICS</h1> 
-            <br /><br />
-            <h3 style="text-align:center; color:white;">.COMMITTED TO CREATING A BRIGHTER WORLD</h3>
-        </div>  
+    </div>
+    <h1 style="text-align:center; color:white;">WElCOME TO THE FACULTY OF COMPUTERS AND INFORMATICS</h1>
+    <br /><br />
+    <h3 style="text-align:center; color:white;">.COMMITTED TO CREATING A BRIGHTER WORLD</h3>
+    </div>
 
     <div class="wrapper">
         <header class="header-section">
-            <div className= "welcome">
+            <div className="welcome">
                 <div class="logo">
                     <div class="logo-wrapper">
                         <a href="{% url 'fciscu' %}">
-                            <img src="{% static 'info/images/fci-logo.jpg' %}" style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
+                            <img src="{% static 'info/images/fci-logo.jpg' %}"
+                                style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
                         </a>
-                         <!--Navigation Menu Start-->
-         <ul class="flexy-menu"  >
-            <li id="number" >
-                <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
-                <div class="menu-space"></div>
-            </li>
-            <li id="contact">
-                <a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
-                <div class="menu-space"></div>
-            </li>
-            <li id="about">
-                <a href="file:///E:/Project/Home/News&Events.html"><i class="fa fa-lightbulb-o"></i> News & Events</a>
-                <div class="menu-space"></div>
-            </li>
-            <li id="contact">
-                <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student ServiceS</a>
-                <div class="menu-space"></div>
-            </li>
-            <li id="contact">
-                <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
-                <div class="menu-space"></div>
-            </li>
-        </ul>
-        
-        <!--Navigation Menu End-->
-                    </div> 
-           
-        </header>
-       
-        
-         
-        <div class="container">
-                <div class="content-wrapper">
-                <!-- product Start-->
-              
-        <div class="call-action">
-            <div class="card text-center">
-                <div class="card-header bg-dark">
-                  
-                </div>
-                <div class="call-action-text">
-                    <h6><span style="margin-right: 150px;">Suez Canal University COVID-19 CORONA VIRUS GUIDANCE</span></h6>
-                    <p class="card-text"></p><br>
-                  <button style="margin-right: 600px;" onclick="window.location.href ='https://govextra.gov.il/ministry-of-health/corona/corona-virus-ar/'"> More Information 
-                    <i class="fa fa-pencil"></i> 
-                </button>
-            <br />
-                <button style="margin-right: 600px;" onclick="window.location.href ='https://www.skynewsarabia.com/live-story/1345832-%D9%85%D8%B3%D8%AA%D8%AC%D8%AF%D8%A7%D8%AA-%D9%83%D9%88%D8%B1%D9%88%D9%86%D8%A7-%D8%A7%D9%94%D8%AD%D8%AF%D8%AB-%D8%A7%D9%94%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%81%D9%8A%D8%B1%D9%88%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85';"> News 
-                    <i class="fa fa-pencil"></i> 
-                </button>              
-                </div>
-              </div>
-        </div>
-
-    <section class="stripe service-panel">
-        <div id="columns" class="columns_5" style="width:117%; padding-top: 5px; margin-top:-15px;">
-            <figure style="width:25.5%;">
-                <img src="{% static 'info/images/4.jpg' %}" />
-                    <a class="button" target="_blank" href="{% url 'studentactivity' %}" style="font-size: 18px; text-align:center;">
-                        <i class="fa fa-search-plus"></i>
-                        Student Activities
-                    </a>
-            </figure>
-
-            <figure>
-                <img src="{% static 'info/images/3.jpg' %}" />
-                    <a class="button" target="_blank" href="{% url 'about' %}" style="font-size: 18px; text-align:center;">
-                        <i  class="fa fa-search-plus"></i> 
-                        Virtual Tour
-                    </a>
-            </figure>
-                        
-            <figure >
-                <img src="{% static 'info/images/2.jpg' %}">
-                    <a class="button" target="_blank" href="{% url 'about' %}" style="font-size: 18px; text-align:center;">
-                        <i  class="fa fa-search-plus"></i>
-                        Admission
-                    </a>
-            </figure>
-
-            <figure>
-                <img src="{% static 'info/images/1.jpg' %}">
-                    <a class="button" target="_blank" href="file:///E:/Project/Home/News&Events.html" style="font-size: 18px; text-align:center;">
-                        <i  class="fa fa-search-plus"></i> 
-                        Open Day
-                    </a>
-            </figure>
-                                      
-        </div>
-    </section>
-                
-            </div>
-            <br /> <br /> <br /> 
-            <br /> <br /> <br /> 
-            <br /> <br /> <br /> 
-            <br /> <br /> <br />  
-            <br /> <br /> <br /> 
-            <br /> <br /> <br /> 
-            <br /> 
-         
-<footer class="footer-section">
-    <div class="footer-content">
-        <div class="footer-top">
-            <h3 style="margin-right: 80px;">PLEASE GET IN TOUCH AND OUR EXPERT SUPPORT TEAM WILL ANSWER ALL YOUR QUESIONS</h3>
-            <section class="footer-contact">
-               
-                    <div class="footer-details">
-                        <ul style="display: flex;">
-            
-                            <li style="padding-right: 100px">
-                                <div class="contact-list">
-                                    <i class="fa">
-                                        <img src="{% static 'info/images/footer-icon-address.png' %}" />
-                                    </i>
-                                        <span> مصر - الإسماعيلية - الكيلو الدائري 4.5 </span>
-                                </div>
+                        <!--Navigation Menu Start-->
+                        <ul class="flexy-menu">
+                            <li id="number">
+                                <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+                                <div class="menu-space"></div>
                             </li>
-
-                            <li style="padding-right: 100px">
-                                <div class="contact-list email">
-                                    <i class="fa">
-                                        <img src="{% static 'info/images/footer-icon-email.png' %}" />
-                                    </i>
-                                        <span>البريد الالكترونى:<br> President_office@suez.edu.eg</span>
-                                </div>
+                            <li id="contact">
+                                <a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+                                <div class="menu-space"></div>
                             </li>
-
-                            <li style="padding-right: 100px">
-                                <div class="contact-list phone">
-                                    <i class="fa">
-                                        <img src="{% static 'info/images/footer-icon-phone.png' %}" />
-                                    </i>
-                                        <span>الهاتف: <br> 0121172448</span>
-                                </div>
+                            <li id="about">
+                                <a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News &
+                                    Events</a>
+                                <div class="menu-space"></div>
                             </li>
-                            <li></li>
-                            
+                            <li id="contact">
+                                <a href="{% url 'studentservices' %}"><i class="fa fa-envelope-o"></i> Student
+                                    ServiceS</a>
+                                <div class="menu-space"></div>
+                            </li>
+                            <li id="contact">
+                                <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
+                                <div class="menu-space"></div>
+                            </li>
                         </ul>
-                        <div class="contact-list phone">
-                            <i class="fa">
-                                
-                            </i>
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8777.55527104764!2d32.26590377595747!3d30.62170881133509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8597f201556e7%3A0x9bd6053867337ff3!2sSuez%20Canal%20University!5e0!3m2!1sen!2seg!4v1623721981712!5m2!1sen!2seg" width="850" height="450" style="border:0px; " allowfullscreen="" loading="lazy"></iframe>
+
+                        <!--Navigation Menu End-->
+                    </div>
+
+        </header>
+
+
+
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- product Start-->
+
+                <div class="call-action">
+                    <div class="card text-center">
+                        <div class="card-header bg-dark">
+
+                        </div>
+                        <div class="call-action-text">
+                            <h6><span style="margin-right: 150px;">Suez Canal University COVID-19 CORONA VIRUS
+                                    GUIDANCE</span></h6>
+                            <p class="card-text"></p><br>
+                            <button style="margin-right: 600px;"
+                                onclick="window.location.href ='https://govextra.gov.il/ministry-of-health/corona/corona-virus-ar/'">
+                                More Information
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <br />
+                            <button style="margin-right: 600px;"
+                                onclick="window.location.href ='https://www.skynewsarabia.com/live-story/1345832-%D9%85%D8%B3%D8%AA%D8%AC%D8%AF%D8%A7%D8%AA-%D9%83%D9%88%D8%B1%D9%88%D9%86%D8%A7-%D8%A7%D9%94%D8%AD%D8%AF%D8%AB-%D8%A7%D9%94%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%81%D9%8A%D8%B1%D9%88%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85';">
+                                News
+                                <i class="fa fa-pencil"></i>
+                            </button>
                         </div>
                     </div>
-            </section>
-                        
-        </div>
+                </div>
 
-                   
-    <div class="footer-bottom">
-        <div class="copyright">
-            Copyright © 2021  
-        <a target="_blank" >FCI</a>
+                <section class="stripe service-panel">
+                    <div id="columns" class="columns_5" style="width:117%; padding-top: 5px; margin-top:-15px;">
+                        <figure style="width:25.5%;">
+                            <img src="{% static 'info/images/4.jpg' %}" />
+                            <a class="button" target="_blank" href="{% url 'studentactivity' %}"
+                                style="font-size: 18px; text-align:center;">
+                                <i class="fa fa-search-plus"></i>
+                                Student Activities
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <img src="{% static 'info/images/3.jpg' %}" />
+                            <a class="button" target="_blank" href="{% url 'about' %}"
+                                style="font-size: 18px; text-align:center;">
+                                <i class="fa fa-search-plus"></i>
+                                Virtual Tour
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <img src="{% static 'info/images/2.jpg' %}">
+                            <a class="button" target="_blank" href="{% url 'about' %}"
+                                style="font-size: 18px; text-align:center;">
+                                <i class="fa fa-search-plus"></i>
+                                Admission
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <img src="{% static 'info/images/1.jpg' %}">
+                            <a class="button" target="_blank" href="{% url 'news_and_events' %}""
+                                style=" font-size: 18px; text-align:center;">
+                                <i class="fa fa-search-plus"></i>
+                                Open Day
+                            </a>
+                        </figure>
+
+                    </div>
+                </section>
+
+            </div>
+            <br /> <br /> <br />
+            <br /> <br /> <br />
+            <br /> <br /> <br />
+            <br /> <br /> <br />
+            <br /> <br /> <br />
+            <br /> <br /> <br />
+            <br />
+
+            <footer class="footer-section">
+                <div class="footer-content">
+                    <div class="footer-top">
+                        <h3 style="margin-right: 80px;">PLEASE GET IN TOUCH AND OUR EXPERT SUPPORT TEAM WILL ANSWER ALL
+                            YOUR QUESIONS</h3>
+                        <section class="footer-contact">
+
+                            <div class="footer-details">
+                                <ul style="display: flex;">
+
+                                    <li style="padding-right: 100px">
+                                        <div class="contact-list">
+                                            <i class="fa">
+                                                <img src="{% static 'info/images/footer-icon-address.png' %}" />
+                                            </i>
+                                            <span> مصر - الإسماعيلية - الكيلو الدائري 4.5 </span>
+                                        </div>
+                                    </li>
+
+                                    <li style="padding-right: 100px">
+                                        <div class="contact-list email">
+                                            <i class="fa">
+                                                <img src="{% static 'info/images/footer-icon-email.png' %}" />
+                                            </i>
+                                            <span>البريد الالكترونى:<br> President_office@suez.edu.eg</span>
+                                        </div>
+                                    </li>
+
+                                    <li style="padding-right: 100px">
+                                        <div class="contact-list phone">
+                                            <i class="fa">
+                                                <img src="{% static 'info/images/footer-icon-phone.png' %}" />
+                                            </i>
+                                            <span>الهاتف: <br> 0121172448</span>
+                                        </div>
+                                    </li>
+                                    <li></li>
+
+                                </ul>
+                                <div class="contact-list phone">
+                                    <i class="fa">
+
+                                    </i>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8777.55527104764!2d32.26590377595747!3d30.62170881133509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8597f201556e7%3A0x9bd6053867337ff3!2sSuez%20Canal%20University!5e0!3m2!1sen!2seg!4v1623721981712!5m2!1sen!2seg"
+                                        width="850" height="450" style="border:0px; " allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            Copyright © 2021
+                            <a target="_blank">FCI</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a href="#" class="back-to-top"></a>
+            </footer>
+
         </div>
     </div>
-                   
 
-    </div>
-        <a href="#" class="back-to-top"></a>
-</footer>
-            
-        </div>
-    </div>
+    <div class="clearfix"></div>
 
-<div class="clearfix"></div>
-
-<script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
-<script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
-     <!--Flexy Menu Script-->
-     <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
-     <!--LayerSlider Script-->
-     <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
-     <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
-     <!--Carousel Plugin Script-->
-     <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
-     <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
-     <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
+    <script type="text/javascript" src="{% static '/info/homepage/js/jquery-1.10.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/info/homepage/js/greensock.js' %}"></script>
+    <!--Flexy Menu Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/flexy-menu.js' %}"></script>
+    <!--LayerSlider Script-->
+    <script type="text/javascript" src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="layerslider/js/layerslider.transitions.js"></script>
+    <!--Carousel Plugin Script-->
+    <script type="text/javascript" src="{% static '/info/homepage/js/owl.carousel.js' %}"></script>
+    <!-- MEGAFOLIO PRO GALLERY SCRIPT -->
+    <script type="text/javascript" src="megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
     <!-- COLORBOX LIGHTBOX SCRIPT -->
     <script type="text/javascript" src="{% static '/info/homepage/js/jquery.colorbox.js' %}"></script>
     <!--Social Share Button Script-->
-    <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript" ></script>
+    <script src="{% static '/info/homepage/js/jquery.sharrre.min.js' %}" type="text/javascript"></script>
     <!-- Fancybox Script -->
-    <script type="text/javascript" src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
+    <script type="text/javascript"
+        src="{% static '/info/homepage/js/jquery.fancybox.pack8cbb8cbb.js?v=2.1.5' %}"></script>
     <!--Tooltip Script-->
     <script type="text/javascript" src="{% static '/info/homepage/js/tooltip.js' %}"></script>
     <!--Placeholder Script-->
@@ -264,7 +281,8 @@ body {
 
 
     <script src="{% static '/info/homepage/js/slideshow.js' %}"></script>
-    
+
 
 </body>
+
 </html>
