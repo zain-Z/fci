@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:25:12 GMT -->
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2021 12:25:12 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
@@ -56,63 +56,54 @@
     }
   </style>
   <!--Top Header Start-->
-  <section class="top-header">
+  <section class="top-header" style="padding-bottom: 60px; ">
     <div class="wrapper topwrap">
+      <ul class="flexy-menu" style="margin-left: 700px; display: flex;  white-space: nowrap;">
 
+        <li id="about" style="float:left; margin-left: 50px; "><a href="{% url 'news_and_events' %}"><i
+              class="fa fa-lightbulb-o"></i> News
+            & Events</a>
+          <div class="menu-space"></div>
+        </li>
+
+        <li id="contact" style=" margin-left: 50px;"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study
+            At
+            FCI</a>
+          <div class="menu-space"></div>
+        </li>
+        <li id="number" style="float:left; margin-left: 50px;">
+          <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+          <div class="menu-space"></div>
+
+        </li>
+        <li id=" home" style="float:left; margin-left: 50px;">
+          <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home</a>
+
+        </li>
+      </ul>
 
     </div>
   </section>
   <!--Top Header End-->
 
-  <div class="wrapper">
-    <header class="header-section">
-      <div class="logo">
-        <div class="logo-wrapper">
-          <a href="{% url 'fciscu' %}">
-            <img src="{% static 'info/images/fci-logo.jpg' %}"
-              style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
-          </a>
-        </div>
-      </div>
-
-      <ul class="flexy-menu">
-        <li id="home">
-          <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home</a>
-
-        </li>
-
-        <li id="number">
-          <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
-          <div class="menu-space"></div>
-
-        </li>
-        <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
-          <div class="menu-space"></div>
-        </li>
-        <li id="about"><a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News & Events</a>
-          <div class="menu-space"></div>
-        </li>
-      </ul>
-
-    </header>
-
+  <div class="wrapper" style="padding-left:110px;">
     <div class="container">
       <div class="content-wrapper">
-        <section class="stripe service-panel">
+        <section class="stripe service-panel" >
 
-          <div class="col-md-10 content-top">
+          <div class="col-md-10 content-top"  >
 
-            <div class="number">
-              <h1>خدمات الطلاب</h1>
+            <div class="number" >
+              <h1 style="text-align: center;">خدمات الطلاب</h1>
               <br />
               <hr />
 
               <br />
-              <h4> تضع كلية الحاسبات و المعلومات امكانيات و موارد مالية كبيرة من أجل تقديم خدمات معلوماتية أساسية للطلاب
+              <h4 style="text-align: center;"> تضع كلية الحاسبات و المعلومات امكانيات و موارد مالية كبيرة من أجل تقديم خدمات معلوماتية أساسية للطلاب
               </h4>
 
               <br />
-              <h4 scope="col">تقدم هذه الصفحة هذه النماذج من الخدمات المتمثلة في :</h4>
+              <h4 scope="col" style="text-align: center;">تقدم هذه الصفحة هذه النماذج من الخدمات المتمثلة في :</h4>
 
 
               <br />
@@ -123,15 +114,6 @@
                 <div class="panel panel-info">
                   <div class="panel-heading">
                     <table class="tables" style="width:100% ;  border: none;">
-                      <!-- 
-                                  <thead>
-                                            <tr>
-                                              <th scope="col">
-                                                <h5 style="font-weight:bold ; font-size:20px; text-align: right;">امتحانات وجداول</h5>
-                                              </th>
-                                            </tr>
-                                          </thead>
-                                        -->
                       <tbody>
                         <tr>
                           <td>
@@ -156,7 +138,7 @@
                           </td>
                           <td>
                             <div class="col-sm-3" style="text-align:center;">
-                              <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;">
+                              <a href="{% url 'vision_and_mission' %}" style="text-decoration: none;">
                                 <span class="dot">
                                   <img src="{% static 'info/images/guids.png' %}" /><br />
                                   <b>لوائح الكليات</b>
@@ -176,15 +158,14 @@
                           </td>
                           <td>
                             <div class="col-sm-3" style="text-align:center;">
-                              <a href="#" style="text-decoration: none;">
-                                <span class="dot">
-                                  <img src="{% static 'info/images/ERP2.png' %}"
-                                    style="height: 90px; width: 100px; border-radius: 2em;" /><br />
-                                  <br />
+                                <a href="{% url 'studentservices' %}" style="text-decoration: none;"> 
+                                  <span class="dot">
+                                  <img src="{% static 'info/images/ERP2.png' %}" style="height: 90px; width: 100px; border-radius: 2em;"/><br />
+                                  <br />  
                                   <b>College ERP</b>
-                                </span>
-                              </a>
-                            </div>
+                                    </span>
+                                </a>
+                              </div>
                           </td>
                           <td>
                             <div class="col-sm-3" style="text-align:center;">
@@ -200,265 +181,12 @@
                         </tr>
                       </tbody>
                     </table>
-                    <br />
-                    <!--
-<div class="panel panel-info">
-    <div class="panel-heading"> 
-        <table class="tables" style="width:100% ;  background:#fff0e6; border: none;">
-                <thead>
-                    <tr>
-                      <th scope="col">
-                        <h5 style="font-weight:bold ; font-size:20px; text-align: right;">مقررات</h5>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td>
-
-                        </td>
-                      <td>
-                        <div class="col-sm-3" style="text-align:center;">
-                            <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;"> 
-                              <img src="{% static 'info/images/guids.png' %}"/><br />
-                                <b>لوائح الكليات</b>
-                            </a>
-                          </div>
-                      </td>
-                      <td>
-                        <div class="col-sm-3" style="text-align:center;">
-                            <a href="http://localhost:3000/GraduationCertificate" style="text-decoration: none;">
-                              <img src="{% static 'info/images/courses.png' %}" /><br /> 
-                                <b>استخراج شهادة التخرج</b>
-                            </a>
-                          </div>
-                          <br />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <br />
-                <div class="panel panel-info">
-                  <div class="panel-heading"> 
-                      <table class="tables" style="width:100% ;  background:#f2f8cf;">
-                              <thead>
-                                  <tr>
-                                    <th scope="col">
-                                      <h5 style="font-weight:bold ; font-size:20px; text-align: right;">College ERP</h5>
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                      <td>
-              
-                                      </td>
-                                    <td>
-                                      <div class="col-sm-3" style="text-align:center;">
-                                          <a href="#" style="text-decoration: none;"> 
-                                            <br />
-                                            <img src="{% static 'info/images/ERP2.png' %}" style="height: 90px; width: 100px; border-radius: 2em;"/><br />
-                                              <b></b>
-                                          </a>
-                                          <br />
-                                        </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-
-
-
-
-
-<br />
-<div class="panel panel-info">
-    <div class="panel-heading"> 
-        <table class="tables" style="width:100% ; background:#d6f5d6; border: none">
-                <thead>
-                    <tr>
-                      <th scope="col">
-                        <h5 style="font-weight:bold ; font-size:20px; text-align: right;">خدمات أخرى</h5>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td></td>
-                      <td >
-                        <div class="col-sm-3" style="text-align:center;">
-                            <a href="file:///E:/Project/Home/StudentActivity.html#" style="text-decoration: none;"> 
-                              <span class="dot">
-                              <img src="{% static 'info/images/actvites.png' %}"/><br />
-                                <b>الانشطة الطلابية</b>
-                                </span>
-                            </a>
-                          </div>
-                          <br />
-                    </td>
-                    </tr>
-                  </tbody>
-                
-
-                </table>
-              
-              <!--
-              <table class="data" style="width: 100%; border-radius: 100%; background:#f2f8cf;">
-                <tr>
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;">
-                      <a href="{% url 'lecture_shedule' %}" style="text-decoration: none;">
-                        <img src="{% static 'info/images/tables.jpg' %}"/><br />
-                          <b>جداول الامتحانات</b>
-                      </a>
-                    </div>
-                  </td>
-
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;"> 
-                      <a href="file:///E:/Project/Home/ExamResult.html" style="text-decoration: none;">
-                        <img src="{% static 'info/images/examresults.png' %}"/><br />
-                          <b>نتائج الامتحانات</b>
-                      </a>
-                    </div>
-                  </td>
-
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;">
-                      <a href="file:///E:/Project/Home/VisionAndMission.html" style="text-decoration: none;"> 
-                        <img src="{% static 'info/images/guids.png' %}"/><br />
-                          <b>لوائح الكليات</b>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <br />
-                <tr>
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;">
-                      <a href="http://localhost:3000/GraduationCertificate" style="text-decoration: none;">
-                        <img src="{% static 'info/images/courses.png' %}" /><br /> 
-                          <b>استخراج شهادة التخرج</b>
-                      </a>
-                    </div>
-                  </td>
-
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;">
-                      <a href="#" style="text-decoration: none;"> 
-                        <br />
-                        <img src="{% static 'info/images/ERP2.png' %}" style="height: 90px; width: 100px;"/><br />
-                          <b>College ERP</b>
-                      </a>
-                      <br />
-                    </div>
-                  </td>
-
-                  <td>
-                    <div class="col-sm-3" style="text-align:center;">
-                      <a href="file:///E:/Project/Home/StudentActivity.html#" style="text-decoration: none;"> 
-                        <img src="{% static 'info/images/actvites.png' %}"/><br />
-                          <b>الانشطة الطلابية</b>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            -->
                   </div>
                 </div>
-                <br />
-                <br />
-                <br />
+
         </section>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--All Content End-->
-    <!--Footer Start-->
-    <footer class="footer-section">
-
-      <div class="footer-content">
-        <div class="footer-top">
-
-          <!--Footer About Us-->
-
-          <!--Footer About Us End-->
-          <!--Footer Contact-->
-          <section class="footer-contact">
-            <h2 class="footer-title">اتصل بنا</h2>
-            <div class="footer-details">
-              <ul>
-                <li>
-                  <div class="contact-list">
-                    <i class="fa"><img src="{% static 'info/images/footer-icon-address.png' %}" /></i>
-                    <span> ادارة الشناوى:<br>55 شارع صفية زغلول - محطة الرمل </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-list email">
-                    <i class="fa"><img src="{% static 'info/images/footer-icon-email.png' %}" /></i>
-                    <span>البريد الالكترونى:<br> info@elshennawy.com</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-list phone">
-                    <i class="fa"><img src="{% static 'info/images/footer-icon-phone.png' %}" /></i>
-                    <span>الهاتف: <br> 034849346 - 034849345 - 034844885</span>
-
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!--Footer Contact End-->
-
-
-        </div>
-
-        <!--Footer Bottom Start-->
-        <div class="footer-bottom">
-          <div class="copyright">
-            Copyright © 2019 <a target="_blank">FCI</a>
-          </div>
-
-        </div>
-        <!--Footer Bottom End-->
-
-      </div>
-
-
-      <!--Go To Top-->
-      <a href="#" class="back-to-top"></a>
-      <!--End-->
-
-    </footer>
-    <!--Footer End-->
-
   </div>
 
   </div>
@@ -498,6 +226,6 @@
 
 
 </body>
-<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2021 12:28:06 GMT -->
 
 </html>

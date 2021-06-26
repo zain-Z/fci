@@ -52,50 +52,32 @@
             }
         }
     </style>
-    <!--Top Header Start-->
-    <section class="top-header">
-        <div class="wrapper topwrap">
 
-
-        </div>
-    </section>
-    <!--Top Header End-->
-
-    <div class="wrapper">
+    <div class="wrapper" style="padding-top: 20px;">
         <header class="header-section">
             <div class="logo">
                 <div class="logo-wrapper">
-                    <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}"
+                    <a href="{% url 'fciscu' %}"><img src="{% static 'info/images/fci-logo.jpg' %}"
                             style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" /></a>
                 </div>
             </div>
 
             <ul class="flexy-menu">
-                <li id="home">
-                    <a href="{% url 'fciscu' %}"> <i class="fa fa-home"></i> Home</a>
-
-                </li>
-
+                
                 <li id="number">
-                    <a href="{% url 'about' %}"><i class="fa fa-thumbs-o-up"></i> About</a>
+                    <a href="{% url 'about' %}" style="text-decoration: none;"><i class="fa fa-thumbs-o-up"></i> About</a>
                     <div class="menu-space"></div>
 
                 </li>
-                <li id="contact"><a href="{% url 'studyatfci' %}"><i class="fa fa-users"></i> Study At FCI</a>
+                <li id="contact"><a href="{% url 'studyatfci' %}"  style="text-decoration: none;"><i class="fa fa-users"></i> Study At FCI</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="about"><a href="{% url 'news_and_events' %}"><i class="fa fa-lightbulb-o"></i> News & Events</a>
+                <li id="about"><a href="{% url 'news_and_events' %}" style="text-decoration: none;"> <i class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"> <a href="{% url 'student_additional_services' %}"><i class="fa fa-envelope-o"></i>
+                <li id="contact"> <a href="{% url 'student_additional_services' %}"  style="text-decoration: none;"><i class="fa fa-envelope-o"></i>
                         Student
                         Services</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
                     <div class="menu-space"></div>
                 </li>
             </ul>
@@ -104,57 +86,25 @@
         <br />
         <div class="container">
             <div class="content-wrapper">
-                <br />
-                <br />
-                <br />
-                <br />
+               
 
-                <h1>جداول الامتحانات</h1>
-                <br />
-                <hr />
+                <h1 style="text-align: center; color:white;" >جداول الامتحانات</h1>
+                
                 <section class="stripe service-panel">
                     <div className="inner">
                         <form>
                             <div className="form-group fw-bold">
-                                <label for="cars">الفرقة:</label>
-                                <select name="" id="">
-                                    <option value="">الأولى</option>
-                                    <option value="">الثانية</option>
-                                    <option value="">الثالثة نظم المعلومات</option>
-                                    <option value="audi">الرابعة نظم المعلومات</option>
-                                    <option value="audi">الرابعة علوم الحاسب</option>
-                                </select>
-
-
-                                <label>
-                                    <h5>الفرقة</h5>
-                                </label>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action">الأولى</a>
-                                    <a href="#" class="list-group-item list-group-item-action">الثانية</a>
-                                    <a href="#" class="list-group-item list-group-item-action">الثالثة نظم المعلومات</a>
-                                    <a href="#" class="list-group-item list-group-item-action">الثالثة علوم الحاسب</a>
-                                    <a href="#" class="list-group-item list-group-item-action">الرابعة نظم المعلومات</a>
-                                    <a href="#" class="list-group-item list-group-item-action">الرابعة علوم الحاسب</a>
-                                </div>
-
-                                <br />
                                 <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-toggle="dropdown">الفرقة
-                                        <span class="caret"></span>
-                                    </button>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" class="list-group-item list-group-item-action">الأولى</a></li>
-                                        <li><a href="#" class="list-group-item list-group-item-action">الثانية</a></li>
-                                        <li><a href="#" class="list-group-item list-group-item-action">الثالثة نظم
+                                    <ul class="dropdown-menu"  style="text-align: center;">
+                                        <li><a href="#"  style="text-decoration: none;" class="list-group-item list-group-item-action">الأولى</a></li>
+                                        <li><a href="#" style="text-decoration: none;" class="list-group-item list-group-item-action">الثانية</a></li>
+                                        <li><a href="#" style="text-decoration: none;" class="list-group-item list-group-item-action">الثالثة نظم
                                                 المعلومات</a></li>
-                                        <li><a href="#" class="list-group-item list-group-item-action">الثالثة علوم
+                                        <li><a href="#" style="text-decoration: none;" class="list-group-item list-group-item-action">الثالثة علوم
                                                 الحاسب</a></li>
-                                        <li><a href="#" class="list-group-item list-group-item-action">الرابعة نظم
-                                                المعلومات</a></li>
-                                        <li><a href="#" class="list-group-item list-group-item-action">الرابعة علوم
+                                                <a href="{% url 'grade_four_is_exam_schedule' %}" style="text-decoration: none;" class="list-group-item list-group-item-action"><li>الرابعة نظم
+                                                المعلومات</li></a>
+                                        <li><a href="#" style="text-decoration: none;" class="list-group-item list-group-item-action">الرابعة علوم
                                                 الحاسب</a></li>
 
                                     </ul>
@@ -174,7 +124,7 @@
 
                     <div class="footer-bottom">
                         <div class="copyright">
-                            Copyright © 2019 <a target="_blank">FCI</a>
+                            Copyright © 2021 <a target="_blank">FCI</a>
                         </div>
 
                     </div>
@@ -229,6 +179,6 @@
 
 </body>
 
-<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2021 12:28:06 GMT -->
 
 </html>
