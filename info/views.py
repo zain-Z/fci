@@ -1,12 +1,13 @@
 from django.core.exceptions import MultipleObjectsReturned
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
-from .models import Dept, Class, Student, Attendance, Course, Teacher, Assign, AttendanceTotal, time_slots, \
+from .models import FinalResult, Dept, Class, Student, Attendance, Course, Teacher, Assign, AttendanceTotal, time_slots, \
     DAYS_OF_WEEK, AssignTime, AttendanceClass, StudentCourse, Marks, MarksClass
 from django.urls import reverse
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
-
+from .serializers import FinalResultSerializer
+from django.http import HttpRequest
 
 # Create your views here.
 
@@ -39,15 +40,15 @@ def cultural_activity(request):
 
 
 @login_required
-def exam_result(request):
-    if request.user.is_student:
-        return render(request, 'info/ExamResult.html')
-
-
-@login_required
 def grade_four_is_exam_result(request):
+    assert isinstance(request, HttpRequest)
+    queryset = FinalResult.objects.all()
+    serializer_class = FinalResultSerializer(queryset, many=True)
     if request.user.is_student:
-        return render(request, 'info/GradeFourISExamResult.html')
+        return render(request, 'info/GradeFourISExamResult.html',
+                      {
+                          'data': serializer_class.data,
+                      })
 
 
 @login_required

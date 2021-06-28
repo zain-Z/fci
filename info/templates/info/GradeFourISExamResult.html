@@ -52,21 +52,14 @@
             }
         }
     </style>
-    <!--Top Header Start-->
-    <section class="top-header">
-        <div class="wrapper topwrap">
-
-
-        </div>
-    </section>
-    <!--Top Header End-->
+   \
 
     <div class="wrapper">
         <header class="header-section">
             <div class="logo">
                 <div class="logo-wrapper">
                     <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}"
-                            style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" /></a>
+                            style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;padding-top: 15px;" /></a>
                 </div>
             </div>
 
@@ -92,12 +85,7 @@
                         Services</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
-                    <div class="menu-space"></div>
-                </li>
+          
             </ul>
 
         </header>
@@ -111,72 +99,39 @@
                     <h3 style="text-align: center;"> الفرقة رابعة - درجة البكالوريوس في الحاسبات والمعلومات تخصص نظم
                         المعلومات - اللائحة الداخلية</h3>
                     <h4 style="text-align: center;"> للعام الجامعي 2020-2021 / الفصل الدراسي الأول</h4>
-
                     <br />
                     <br />
                     <br />
                     <br />
-
-                    <table style="width: 100%;">
-                        <thead>
-                            <tr>
-                                <th scope="col">رقم الجلوس</th>
-                                <th scope="col">الاسم</th>
-                                <th scope="col">حالة القيد</th>
-                                <th scope="col">المعلوماتية الحيوية</th>
-                                <th scope="col">التنقيب عن البيانات</th>
-                                <th scope="col">نظم قواعد المعرفة</th>
-                                <th scope="col">نظم المعلومات الطبية</th>
-                                <th scope="col">منهج اختياري(3)</th>
+                    <table style="width: 100%; background-color:salmon;border: 1px solid black;border-collapse: collapse;">
+                        <thead >
+                            <tr >
+                                {%  for i in data %}
+                                {% if forloop.counter < 8 %}
+                                <th scope="col" style="height: 70px;border: 1px solid black;border-collapse: collapse; color:black;">{{i.course}}</th>
+                                {% endif %} 
+                                {% endfor %}
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>5487956154</td>
-                                <td>شهد جمال ابراهيم زعرب</td>
-                                <td>مستجد تقدير</td>
-                                <td>م</td>
-                                <td>ججـ</td>
-                                <td>م</td>
-                                <td>م</td>
-                                <th scope="row">م</th>
+                            <tr style="border: 1px solid black;">
+                                {% for i in data %}
+                                {% if forloop.counter < 8 %}
+                                <td style="height: 70px;text-align:center;border-collapse: collapse; border: 1px solid black; color:black;">{{i.results}}</td>
+                                {% endif %} 
+                                {% endfor %}
                             </tr>
                         </tbody>
 
                     </table>
-
-
-
-
-
-
-
-
                     <br />
                     <br />
-
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
                     <div class="footer-bottom">
                         <div class="copyright">
-                            Copyright © 2019 <a target="_blank">FCI</a>
+                            Copyright © 2021 <a target="_blank">FCI</a>
                         </div>
-
                     </div>
-
             </div>
-
-
-            <!--Go To Top-->
-            <a href="#" class="back-to-top"></a>
-            <!--End-->
-
             </footer>
             <!--Footer End-->
 
@@ -220,6 +175,6 @@
 
 </body>
 
-<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2019 12:28:06 GMT -->
+<!-- Mirrored from elshennawy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2021 12:28:06 GMT -->
 
 </html>

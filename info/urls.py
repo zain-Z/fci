@@ -11,7 +11,6 @@ urlpatterns = [
     path('studentactivity/', views.studentactivity, name='studentactivity'),
     path('activity_sport/', views.activity_sport, name='activity_sport'),
     path('cultural_activity/', views.cultural_activity, name='cultural_activity'),
-    path('exam_result/', views.exam_result, name='exam_result'),
     path('grade_four_is_exam_result/', views.grade_four_is_exam_result,
          name='grade_four_is_exam_result'),
     path('grade_four_is_exam_schedule/', views.grade_four_is_exam_schedule,

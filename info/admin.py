@@ -4,8 +4,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.http import HttpResponseRedirect
 from django.urls import path
-
-from .models import Dept, Class, Student, Attendance, Course, Teacher, Assign, AssignTime, AttendanceClass
+from .models import FinalResult, Dept, Class, Student, Attendance, Course, Teacher, Assign, AssignTime, AttendanceClass
 from .models import StudentCourse, Marks, User, AttendanceRange
 
 # Register your models here.
@@ -34,6 +33,15 @@ class DeptAdmin(admin.ModelAdmin):
     list_display = ('name', 'id')
     search_fields = ('name', 'id')
     ordering = ['name']
+
+
+class FinalResultAdmin(admin.ModelAdmin):
+
+    list_display = [
+        'course',
+        'student',
+        'results',
+    ]
 
 
 class StudentInline(admin.TabularInline):
@@ -146,5 +154,6 @@ admin.site.register(Student, StudentAdmin)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Teacher, TeacherAdmin)
 admin.site.register(Assign, AssignAdmin)
+admin.site.register(FinalResult, FinalResultAdmin)
 admin.site.register(StudentCourse, StudentCourseAdmin)
 admin.site.register(AttendanceClass, AttendanceClassAdmin)

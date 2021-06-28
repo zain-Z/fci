@@ -40,6 +40,14 @@ test_name = (
     ('Semester End Exam', 'Semester End Exam'),
 )
 
+final_results = (
+    ('ضعيف', 'ضعيف'),
+    ('مقبول', 'مقبول'),
+    ('جيد', 'جيد'),
+    ('جيد جدا', 'جيد جدا'),
+    ('امتياز', 'امتياز')
+)
+
 
 class User(AbstractUser):
     @property
@@ -274,6 +282,19 @@ class AttendanceRange(models.Model):
     end_date = models.DateField()
 
 
+class FinalResult(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    results = models.CharField(
+        max_length=7, choices=final_results, default='امتياز')
+
+    class Meta:
+        unique_together = (('student', 'course'),)
+
+    def __str__(self):
+        sname = Student.objects.get(name=self.student)
+        cname = Course.objects.get(name=self.course)
+        return '%s : %s' % (sname.name, cname.name)
 # Triggers
 
 
