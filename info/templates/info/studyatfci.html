@@ -66,7 +66,7 @@
                     <div class="menu-space"></div>
 
                 </li>
-                <li id="about" style="float:left;"><a href="file:///E:/Project/Home/News&Events.html"><i
+                <li id="about" style="float:left;"><a href="{% url 'news_and_events' %}"><i
                             class="fa fa-lightbulb-o"></i> News & Events</a>
                     <div class="menu-space"></div>
                 </li>
@@ -74,10 +74,7 @@
                             class="fa fa-envelope-o"></i> Student Services</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact" style="float:left;">
-                    <a href="{% url 'logout' %}"><i class="fa fa-envelope-o"></i>Logout</a>
-                    <div class="menu-space"></div>
-                </li>
+               
             </ul>
         </div>
     </section>

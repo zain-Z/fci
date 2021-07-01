@@ -52,20 +52,16 @@
         }
     </style>
 
-    <!--Top Header Start-->
-    <section class="top-header">
-        <div class="wrapper topwrap">
-
-
-        </div>
-    </section>
-    <!--Top Header End-->
+    
 
     <div class="wrapper">
         <header class="header-section">
             <div class="logo">
                 <div class="logo-wrapper">
-                    <a href="#"><img src="{% static 'info/images/fci-logo.jpg' %}" /></a>
+                    <a href="{% url 'fciscu' %}">
+                        <img src="{% static 'info/images/fci-logo.jpg' %}"
+                            style="width: 200px; mix-blend-mode: multiply; padding-right: 25px;" />
+                    </a>
                 </div>
             </div>
 
@@ -91,12 +87,7 @@
                         Services</a>
                     <div class="menu-space"></div>
                 </li>
-                <li id="contact"><a href="#"><i class="fa fa-envelope-o"></i> Log in</a>
-                    <div class="menu-space"></div>
-                </li>
-                <li><a id="openD" href="javascript:void(0)"><i class="fa fa-key"></i> Register</a>
-                    <div class="menu-space"></div>
-                </li>
+               
             </ul>
 
         </header>

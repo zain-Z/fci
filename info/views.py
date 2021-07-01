@@ -12,97 +12,80 @@ from django.http import HttpRequest
 # Create your views here.
 
 
-@login_required
 def index(request):
-    if request.user.is_teacher:
-        return render(request, 'info/t_homepage.html')
-    if request.user.is_student:
-        return render(request, 'info/fci_scu.html')
-    return render(request, 'info/logout.html')
+
+    return render(request, 'info/fci_scu.html')
 
 
-@login_required
 def studentservices(request):
-    if request.user.is_student:
-        return render(request, 'info/student_services.html')
+
+    return render(request, 'info/student_services.html')
 
 
-@login_required
 def activity_sport(request):
-    if request.user.is_student:
-        return render(request, 'info/ActivitySport.html')
+
+    return render(request, 'info/ActivitySport.html')
 
 
-@login_required
 def cultural_activity(request):
-    if request.user.is_student:
-        return render(request, 'info/CulturalActivity.html')
+
+    return render(request, 'info/CulturalActivity.html')
 
 
-@login_required
 def grade_four_is_exam_result(request):
     assert isinstance(request, HttpRequest)
     queryset = FinalResult.objects.all()
     serializer_class = FinalResultSerializer(queryset, many=True)
-    if request.user.is_student:
-        return render(request, 'info/GradeFourISExamResult.html',
-                      {
-                          'data': serializer_class.data,
-                      })
+
+    return render(request, 'info/GradeFourISExamResult.html',
+                  {
+                      'data': serializer_class.data,
+                  })
 
 
-@login_required
 def grade_four_is_exam_schedule(request):
-    if request.user.is_student:
-        return render(request, 'info/GradeFourISExamSchedule.html')
+
+    return render(request, 'info/GradeFourISExamSchedule.html')
 
 
-@login_required
 def lecture_shedule(request):
-    if request.user.is_student:
-        return render(request, 'info/LectureShedule.html')
+
+    return render(request, 'info/LectureShedule.html')
 
 
-@login_required
 def news_and_events(request):
-    if request.user.is_student:
-        return render(request, 'info/News&Events.html')
+
+    return render(request, 'info/News&Events.html')
 
 
-@login_required
 def student_additional_services(request):
-    if request.user.is_student:
-        return render(request, 'info/StudentAdditionalServices.html')
+
+    return render(request, 'info/StudentAdditionalServices.html')
 
 
-@login_required
 def vision_and_mission(request):
-    if request.user.is_student:
-        return render(request, 'info/VisionAndMission.html')
+
+    return render(request, 'info/VisionAndMission.html')
 
 
-@login_required
 def artistic_activity(request):
-    if request.user.is_student:
-        return render(request, 'info/ArtisticActivity.html')
+
+    return render(request, 'info/ArtisticActivity.html')
 
 
-@login_required
 def about(request):
-    if request.user.is_student:
-        return render(request, 'info/about.html')
+
+    return render(request, 'info/about.html')
 
 
-@login_required
 def studyatfci(request):
-    if request.user.is_student:
-        return render(request, 'info/studyatfci.html')
+
+    return render(request, 'info/studyatfci.html')
 
 
-@login_required
 def studentactivity(request):
-    if request.user.is_student:
-        return render(request, 'info/StudentActivity.html')
+
+    return render(request, 'info/StudentActivity.html')
 
 
 @login_required()
