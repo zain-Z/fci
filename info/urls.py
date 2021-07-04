@@ -17,7 +17,7 @@ urlpatterns = [
          name='grade_four_is_exam_schedule'),
     path('lecture_shedule/', views.lecture_shedule, name='lecture_shedule'),
     path('news_and_events/', views.news_and_events, name='news_and_events'),
-    path('student_additional_services/', views.student_additional_services,
+    path('faculty_services/', views.student_additional_services,
          name='student_additional_services'),
     path('vision_and_mission/', views.vision_and_mission,
          name='vision_and_mission'),
